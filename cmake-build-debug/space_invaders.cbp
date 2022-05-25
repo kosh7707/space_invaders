@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="space_invaders"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\Downloads\;CMake Files\..\..\Downloads\SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit\;CMake Files\..\..\Downloads\SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit\SFML-2.5.1\;CMake Files\..\..\Downloads\SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit\SFML-2.5.1\lib\;CMake Files\..\..\Downloads\SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit\SFML-2.5.1\lib\cmake\;CMake Files\..\..\Downloads\SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit\SFML-2.5.1\lib\cmake\SFML\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/user/CLionProjects/space_invaders/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="space_invaders">
+				<Option output="C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/space_invaders.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/user/CLionProjects/space_invaders/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSFML_STATIC"/>
+					<Add directory="C:/Users/user/CLionProjects/space_invaders/cmake-build-debug"/>
+					<Add directory="C:/Users/user/CLionProjects/space_invaders/include"/>
+					<Add directory="C:/Users/user/Downloads/SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit/SFML-2.5.1/include"/>
+					<Add directory="C:\googletest-distribution\include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/mingw64/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 space_invaders"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="space_invaders/fast">
+				<Option output="C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/space_invaders.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/user/CLionProjects/space_invaders/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSFML_STATIC"/>
+					<Add directory="C:/Users/user/CLionProjects/space_invaders/cmake-build-debug"/>
+					<Add directory="C:/Users/user/CLionProjects/space_invaders/include"/>
+					<Add directory="C:/Users/user/Downloads/SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit/SFML-2.5.1/include"/>
+					<Add directory="C:\googletest-distribution\include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include/c++/10.3.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/mingw64/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 space_invaders/fast"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/user/CLionProjects/space_invaders/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/user/CLionProjects/space_invaders/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/user/CLionProjects/space_invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/BitmapStore.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/BitmapStore.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/BlueprintObjectParser.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/BlueprintObjectParser.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/BulletSpawner.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/BulletSpawner.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/BulletUpdateComponent.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/BulletUpdateComponent.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/Button.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/Button.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/ColliderComponent.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/ColliderComponent.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/Component.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/Component.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/DevelopState.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameEngine.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameEngine.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameInputHandler.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameInputHandler.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameObject.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameObject.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameObjectBlueprint.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameObjectBlueprint.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameObjectFactoryPlayMode.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameObjectFactoryPlayMode.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameObjectSharer.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameOverInputHandler.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameOverInputHandler.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameOverUIPanel.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameOverUIPanel.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameScreen.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameScreen.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameUIPanel.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GameUIPanel.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GraphicsComponent.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/GraphicsComponent.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/InputHandler.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/InputHandler.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/InvaderUpdateComponent.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/InvaderUpdateComponent.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/LevelManager.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/LevelManager.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/ObjectTags.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/ObjectTags.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/PhysicsEnginePlayMode.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/PhysicsEnginePlayMode.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/PlayModeObjectLoader.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/PlayModeObjectLoader.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/PlayerUpdateComponent.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/PlayerUpdateComponent.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/RectColliderComponent.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/RectColliderComponent.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/Screen.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/Screen.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/ScreenManager.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/ScreenManager.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/ScreenManagerRemoteControl.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/ScreenManagerRemoteControl.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/SelectInputHandler.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/SelectInputHandler.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/SelectScreen.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/SelectScreen.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/SelectUIPanel.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/SelectUIPanel.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/SoundEngine.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/SoundEngine.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/SpaceInvaders.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/StandardGraphicsComponent.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/StandardGraphicsComponent.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/TransformComponent.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/TransformComponent.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/UIPanel.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/UIPanel.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/UpdateComponent.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/UpdateComponent.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/WorldState.h">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/../../Downloads/SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit/SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Downloads\SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit\SFML-2.5.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/../../Downloads/SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\Downloads\SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit\SFML-2.5.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/../../Downloads/SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit/SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Downloads\SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit\SFML-2.5.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/../../Downloads/SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\Downloads\SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit\SFML-2.5.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/../../Downloads/SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\Downloads\SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit\SFML-2.5.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/user/CLionProjects/space_invaders/../../Downloads/SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Downloads\SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit\SFML-2.5.1\lib\cmake\SFML\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
