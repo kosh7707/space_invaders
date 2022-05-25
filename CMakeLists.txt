@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 # Windows specific config
 IF (WIN32)
     # Include local sfml cmake config
-    set(SFML_DIR "C:/Users/user/Downloads/SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit/SFML-2.5.1/lib/cmake/SFML")
+    set(SFML_DIR "C:/SFML/lib/cmake/SFML")
     # Link sfml statically (Optional)
     set(SFML_STATIC_LIBRARIES TRUE)
 ENDIF()
