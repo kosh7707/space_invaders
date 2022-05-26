@@ -3,8 +3,7 @@
 #include <iostream>
 #include <fstream>
 
-void PlayModeObjectLoader::
-loadGameObjectsForPlayMode(
+void PlayModeObjectLoader::loadGameObjectsForPlayMode(
 	string pathToFile, vector<GameObject>& gameObjects)
 {
 	ifstream reader(pathToFile);

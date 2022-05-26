@@ -56,10 +56,7 @@ void GameObjectFactoryPlayMode::buildGameObject(
 	}
 
 	if (bp.getEncompassingRectCollider()) {
-		shared_ptr<RectColliderComponent> rcc =
-			make_shared<RectColliderComponent>(
-				bp.getEncompassingRectColliderLabel());
-
+		shared_ptr<RectColliderComponent> rcc = make_shared<RectColliderComponent>(bp.getEncompassingRectColliderLabel());
 		gameObject.addComponent(rcc);
 		rcc->setOrMoveCollider(bp.getLocationX(),
 			bp.getLocationY(),
