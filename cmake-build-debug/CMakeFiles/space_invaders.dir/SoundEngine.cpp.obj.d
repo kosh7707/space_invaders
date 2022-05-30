@@ -217,4 +217,6 @@ CMakeFiles/space_invaders.dir/SoundEngine.cpp.obj: \
  C:/SFML/include/SFML/Audio/SoundFileReader.hpp \
  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/x86_64-w64-mingw32/include/assert.h \
- C:\Users\Administrator\Desktop\space_invaders\SoundEngine.h
+ C:\Users\Administrator\Desktop\space_invaders\SoundEngine.h \
+ C:\Users\Administrator\Desktop\space_invaders\VolumeControl.h \
+ C:\Users\Administrator\Desktop\space_invaders\WorldState.h

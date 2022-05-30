@@ -296,4 +296,5 @@ CMakeFiles/space_invaders.dir/GameOverInputHandler.cpp.obj: \
  C:/SFML/include/SFML/Audio/SoundFileFactory.inl \
  C:/SFML/include/SFML/Audio/SoundFileReader.hpp \
  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp \
+ C:\Users\Administrator\Desktop\space_invaders\VolumeControl.h \
  C:\Users\Administrator\Desktop\space_invaders\WorldState.h

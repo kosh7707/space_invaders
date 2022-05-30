@@ -1266,7 +1266,9 @@ CMakeFiles/space_invaders.dir/GameEngine.cpp.obj: ../GameEngine.cpp \
   C:/SFML/include/SFML/Audio/SoundFileFactory.hpp \
   C:/SFML/include/SFML/Audio/SoundFileFactory.inl \
   C:/SFML/include/SFML/Audio/SoundFileReader.hpp \
-  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp
+  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp \
+  ../VolumeControl.h \
+  ../WorldState.h
 
 CMakeFiles/space_invaders.dir/GameInputHandler.cpp.obj: ../GameInputHandler.cpp \
   ../GameInputHandler.h \
@@ -1571,6 +1573,8 @@ CMakeFiles/space_invaders.dir/GameInputHandler.cpp.obj: ../GameInputHandler.cpp 
   C:/SFML/include/SFML/Audio/SoundFileFactory.inl \
   C:/SFML/include/SFML/Audio/SoundFileReader.hpp \
   C:/SFML/include/SFML/Audio/SoundFileWriter.hpp \
+  ../VolumeControl.h \
+  ../WorldState.h \
   ../GameScreen.h \
   ../GameOverInputHandler.h \
   ../BulletSpawner.h \
@@ -2563,6 +2567,7 @@ CMakeFiles/space_invaders.dir/GameOverInputHandler.cpp.obj: ../GameOverInputHand
   C:/SFML/include/SFML/Audio/SoundFileFactory.inl \
   C:/SFML/include/SFML/Audio/SoundFileReader.hpp \
   C:/SFML/include/SFML/Audio/SoundFileWriter.hpp \
+  ../VolumeControl.h \
   ../WorldState.h
 
 CMakeFiles/space_invaders.dir/GameOverUIPanel.cpp.obj: ../GameOverUIPanel.cpp \
@@ -3999,7 +4004,8 @@ CMakeFiles/space_invaders.dir/InvaderUpdateComponent.cpp.obj: ../InvaderUpdateCo
   C:/SFML/include/SFML/Audio/SoundFileFactory.hpp \
   C:/SFML/include/SFML/Audio/SoundFileFactory.inl \
   C:/SFML/include/SFML/Audio/SoundFileReader.hpp \
-  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp
+  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp \
+  ../VolumeControl.h
 
 CMakeFiles/space_invaders.dir/LevelManager.cpp.obj: ../LevelManager.cpp \
   ../LevelManager.h \
@@ -4690,6 +4696,7 @@ CMakeFiles/space_invaders.dir/PhysicsEnginePlayMode.cpp.obj: ../PhysicsEnginePla
   C:/SFML/include/SFML/Audio/SoundFileFactory.inl \
   C:/SFML/include/SFML/Audio/SoundFileReader.hpp \
   C:/SFML/include/SFML/Audio/SoundFileWriter.hpp \
+  ../VolumeControl.h \
   ../WorldState.h \
   ../InvaderUpdateComponent.h \
   ../BulletUpdateComponent.h
@@ -6386,6 +6393,7 @@ CMakeFiles/space_invaders.dir/SelectInputHandler.cpp.obj: ../SelectInputHandler.
   C:/SFML/include/SFML/Audio/SoundFileFactory.inl \
   C:/SFML/include/SFML/Audio/SoundFileReader.hpp \
   C:/SFML/include/SFML/Audio/SoundFileWriter.hpp \
+  ../VolumeControl.h \
   ../WorldState.h
 
 CMakeFiles/space_invaders.dir/SelectScreen.cpp.obj: ../SelectScreen.cpp \
@@ -7162,7 +7170,9 @@ CMakeFiles/space_invaders.dir/SoundEngine.cpp.obj: ../SoundEngine.cpp \
   C:/SFML/include/SFML/Audio/SoundFileReader.hpp \
   C:/SFML/include/SFML/Audio/SoundFileWriter.hpp \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.3/bin/mingw/x86_64-w64-mingw32/include/assert.h \
-  ../SoundEngine.h
+  ../SoundEngine.h \
+  ../VolumeControl.h \
+  ../WorldState.h
 
 CMakeFiles/space_invaders.dir/SpaceInvaders.cpp.obj: ../SpaceInvaders.cpp \
   ../GameEngine.h \
@@ -7475,7 +7485,9 @@ CMakeFiles/space_invaders.dir/SpaceInvaders.cpp.obj: ../SpaceInvaders.cpp \
   C:/SFML/include/SFML/Audio/SoundFileFactory.hpp \
   C:/SFML/include/SFML/Audio/SoundFileFactory.inl \
   C:/SFML/include/SFML/Audio/SoundFileReader.hpp \
-  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp
+  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp \
+  ../VolumeControl.h \
+  ../WorldState.h
 
 CMakeFiles/space_invaders.dir/StandardGraphicsComponent.cpp.obj: ../StandardGraphicsComponent.cpp \
   ../StandardGraphicsComponent.h \
@@ -8785,6 +8797,8 @@ C:/SFML/include/SFML/System/String.inl:
 ../InputHandler.cpp:
 
 C:/SFML/include/SFML/System/Thread.inl:
+
+../VolumeControl.h:
 
 C:/SFML/include/SFML/System/ThreadLocalPtr.hpp:
 

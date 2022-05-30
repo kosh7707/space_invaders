@@ -3,6 +3,7 @@
 #define SOUND_ENGINE_H
 
 #include <SFML/Audio.hpp>
+#include "VolumeControl.h"
 
 using namespace sf;
 
@@ -14,12 +15,12 @@ private:
 	SoundBuffer m_InvaderExplodeBuffer;
 	SoundBuffer m_ClickBuffer;
 
-	Sound m_ShootSound;
-	Sound m_PlayerExplodeSound;
-	Sound m_InvaderExplodeSound;
-	Sound m_UhSound;
-	Sound m_OhSound;
-	Sound m_ClickSound;
+	CustomSound m_ShootSound;
+    CustomSound m_PlayerExplodeSound;
+    CustomSound m_InvaderExplodeSound;
+    CustomSound m_UhSound;
+    CustomSound m_OhSound;
+    CustomSound m_ClickSound;
 
 public:
 	SoundEngine();

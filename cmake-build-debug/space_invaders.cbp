@@ -315,6 +315,9 @@
 		<Unit filename="C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h">
 			<Option target="space_invaders"/>
 		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/space_invaders/VolumeControl.h">
+			<Option target="space_invaders"/>
+		</Unit>
 		<Unit filename="C:/Users/Administrator/Desktop/space_invaders/WorldState.h">
 			<Option target="space_invaders"/>
 		</Unit>

@@ -295,6 +295,7 @@ CMakeFiles/space_invaders.dir/PhysicsEnginePlayMode.cpp.obj: \
  C:/SFML/include/SFML/Audio/SoundFileFactory.inl \
  C:/SFML/include/SFML/Audio/SoundFileReader.hpp \
  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp \
+ C:\Users\Administrator\Desktop\space_invaders\VolumeControl.h \
  C:\Users\Administrator\Desktop\space_invaders\WorldState.h \
  C:\Users\Administrator\Desktop\space_invaders\InvaderUpdateComponent.h \
  C:\Users\Administrator\Desktop\space_invaders\BulletUpdateComponent.h
