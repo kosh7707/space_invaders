@@ -1275,6 +1275,8 @@ CMakeFiles/space_invaders.dir/GameEngine.cpp.obj
  C:/SFML/include/SFML/Audio/SoundFileFactory.inl
  C:/SFML/include/SFML/Audio/SoundFileReader.hpp
  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp
+ C:/Users/Administrator/Desktop/space_invaders/VolumeControl.h
+ C:/Users/Administrator/Desktop/space_invaders/WorldState.h
 
 CMakeFiles/space_invaders.dir/GameInputHandler.cpp.obj
  C:/Users/Administrator/Desktop/space_invaders/GameInputHandler.cpp
@@ -1580,6 +1582,8 @@ CMakeFiles/space_invaders.dir/GameInputHandler.cpp.obj
  C:/SFML/include/SFML/Audio/SoundFileFactory.inl
  C:/SFML/include/SFML/Audio/SoundFileReader.hpp
  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp
+ C:/Users/Administrator/Desktop/space_invaders/VolumeControl.h
+ C:/Users/Administrator/Desktop/space_invaders/WorldState.h
  C:/Users/Administrator/Desktop/space_invaders/GameScreen.h
  C:/Users/Administrator/Desktop/space_invaders/GameOverInputHandler.h
  C:/Users/Administrator/Desktop/space_invaders/BulletSpawner.h
@@ -2576,6 +2580,7 @@ CMakeFiles/space_invaders.dir/GameOverInputHandler.cpp.obj
  C:/SFML/include/SFML/Audio/SoundFileFactory.inl
  C:/SFML/include/SFML/Audio/SoundFileReader.hpp
  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp
+ C:/Users/Administrator/Desktop/space_invaders/VolumeControl.h
  C:/Users/Administrator/Desktop/space_invaders/WorldState.h
 
 CMakeFiles/space_invaders.dir/GameOverUIPanel.cpp.obj
@@ -4019,6 +4024,7 @@ CMakeFiles/space_invaders.dir/InvaderUpdateComponent.cpp.obj
  C:/SFML/include/SFML/Audio/SoundFileFactory.inl
  C:/SFML/include/SFML/Audio/SoundFileReader.hpp
  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp
+ C:/Users/Administrator/Desktop/space_invaders/VolumeControl.h
 
 CMakeFiles/space_invaders.dir/LevelManager.cpp.obj
  C:/Users/Administrator/Desktop/space_invaders/LevelManager.cpp
@@ -4712,6 +4718,7 @@ CMakeFiles/space_invaders.dir/PhysicsEnginePlayMode.cpp.obj
  C:/SFML/include/SFML/Audio/SoundFileFactory.inl
  C:/SFML/include/SFML/Audio/SoundFileReader.hpp
  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp
+ C:/Users/Administrator/Desktop/space_invaders/VolumeControl.h
  C:/Users/Administrator/Desktop/space_invaders/WorldState.h
  C:/Users/Administrator/Desktop/space_invaders/InvaderUpdateComponent.h
  C:/Users/Administrator/Desktop/space_invaders/BulletUpdateComponent.h
@@ -6415,6 +6422,7 @@ CMakeFiles/space_invaders.dir/SelectInputHandler.cpp.obj
  C:/SFML/include/SFML/Audio/SoundFileFactory.inl
  C:/SFML/include/SFML/Audio/SoundFileReader.hpp
  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp
+ C:/Users/Administrator/Desktop/space_invaders/VolumeControl.h
  C:/Users/Administrator/Desktop/space_invaders/WorldState.h
 
 CMakeFiles/space_invaders.dir/SelectScreen.cpp.obj
@@ -7195,6 +7203,8 @@ CMakeFiles/space_invaders.dir/SoundEngine.cpp.obj
  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/x86_64-w64-mingw32/include/assert.h
  C:/Users/Administrator/Desktop/space_invaders/SoundEngine.h
+ C:/Users/Administrator/Desktop/space_invaders/VolumeControl.h
+ C:/Users/Administrator/Desktop/space_invaders/WorldState.h
 
 CMakeFiles/space_invaders.dir/SpaceInvaders.cpp.obj
  C:/Users/Administrator/Desktop/space_invaders/SpaceInvaders.cpp
@@ -7509,6 +7519,8 @@ CMakeFiles/space_invaders.dir/SpaceInvaders.cpp.obj
  C:/SFML/include/SFML/Audio/SoundFileFactory.inl
  C:/SFML/include/SFML/Audio/SoundFileReader.hpp
  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp
+ C:/Users/Administrator/Desktop/space_invaders/VolumeControl.h
+ C:/Users/Administrator/Desktop/space_invaders/WorldState.h
 
 CMakeFiles/space_invaders.dir/StandardGraphicsComponent.cpp.obj
  C:/Users/Administrator/Desktop/space_invaders/StandardGraphicsComponent.cpp

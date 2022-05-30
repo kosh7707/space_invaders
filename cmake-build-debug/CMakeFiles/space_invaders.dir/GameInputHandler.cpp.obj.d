@@ -299,6 +299,8 @@ CMakeFiles/space_invaders.dir/GameInputHandler.cpp.obj: \
  C:/SFML/include/SFML/Audio/SoundFileFactory.inl \
  C:/SFML/include/SFML/Audio/SoundFileReader.hpp \
  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp \
+ C:\Users\Administrator\Desktop\space_invaders\VolumeControl.h \
+ C:\Users\Administrator\Desktop\space_invaders\WorldState.h \
  C:\Users\Administrator\Desktop\space_invaders\GameScreen.h \
  C:\Users\Administrator\Desktop\space_invaders\GameOverInputHandler.h \
  C:\Users\Administrator\Desktop\space_invaders\BulletSpawner.h \

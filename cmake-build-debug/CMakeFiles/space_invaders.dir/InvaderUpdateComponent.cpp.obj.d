@@ -294,4 +294,5 @@ CMakeFiles/space_invaders.dir/InvaderUpdateComponent.cpp.obj: \
  C:/SFML/include/SFML/Audio/SoundFileFactory.hpp \
  C:/SFML/include/SFML/Audio/SoundFileFactory.inl \
  C:/SFML/include/SFML/Audio/SoundFileReader.hpp \
- C:/SFML/include/SFML/Audio/SoundFileWriter.hpp
+ C:/SFML/include/SFML/Audio/SoundFileWriter.hpp \
+ C:\Users\Administrator\Desktop\space_invaders\VolumeControl.h

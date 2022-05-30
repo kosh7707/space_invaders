@@ -1,7 +1,9 @@
 #pragma once
+
 class WorldState
 {
 public:
+    static const int SOUND = 5;
 	static const int WORLD_WIDTH = 100;
 	static int WORLD_HEIGHT;
 	static int SCORE;
