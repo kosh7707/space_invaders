@@ -12,9 +12,6 @@ void Screen::addPanel(unique_ptr<UIPanel> uip,
 	// the vector has a COPY which is not allowed
 	m_Panels.push_back(move(uip));
 	m_InputHandlers.push_back(ih);
-
-	
-
 }
 
 void Screen::handleInput(RenderWindow& window)

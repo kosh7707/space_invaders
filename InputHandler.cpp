@@ -4,12 +4,8 @@
 using namespace sf;
 using namespace std;
 
-void InputHandler::initialiseInputHandler(
-	ScreenManagerRemoteControl* sw,
-	vector<shared_ptr<Button>> buttons,
-	View* pointerToUIView,
-	Screen* parentScreen)
-{
+void InputHandler::initialiseInputHandler(ScreenManagerRemoteControl* sw, vector<shared_ptr<Button>> buttons,
+	                                        View* pointerToUIView, Screen* parentScreen) {
 	m_ScreenManagerRemoteControl = sw;
 	m_Buttons = buttons;
 	m_PointerToUIPanelView = pointerToUIView;

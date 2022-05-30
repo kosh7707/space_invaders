@@ -92,8 +92,7 @@ void GameInputHandler::handleKeyPressed(
 	}
 }
 
-void GameInputHandler::handleKeyReleased(
-	Event& event, RenderWindow& window)
+void GameInputHandler::handleKeyReleased(Event& event, RenderWindow& window)
 {
 	if (event.key.code == Keyboard::Left)
 	{
@@ -117,7 +116,8 @@ void GameInputHandler::handleKeyReleased(
 
 	else if (event.key.code == Keyboard::Space)
 	{
-		// Shoot a bullet
+        std::cout << "Released Space\n";
+
 		SoundEngine::playShoot();
 		Vector2f spawnLocation;
 		spawnLocation.x = m_PTC->getLocation().x + 

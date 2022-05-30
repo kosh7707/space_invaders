@@ -1,43 +1,33 @@
 #include "BulletUpdateComponent.h"
 #include "WorldState.h"
+#include <random>
 
-void BulletUpdateComponent::spawnForPlayer(
-	Vector2f spawnPosition)
+void BulletUpdateComponent::spawnForPlayer(Vector2f spawnPosition)
 {
 	m_MovingUp = true;
 	m_BelongsToPlayer = true;
 	m_IsSpawned = true;
 
 	m_TC->getLocation().x = spawnPosition.x;
-	// Tweak the y location based on the height of the bullet 
-	// The x location is already tweaked to the center of the player
 	m_TC->getLocation().y = spawnPosition.y - m_TC->getSize().y;
-	// Update the collider
-	m_RCC->setOrMoveCollider(m_TC->getLocation().x,
-		m_TC->getLocation().y,
-		m_TC->getSize().x, m_TC->getSize().y);
+	m_RCC->setOrMoveCollider(m_TC->getLocation().x, m_TC->getLocation().y, m_TC->getSize().x, m_TC->getSize().y);
 }
 
-void BulletUpdateComponent::spawnForInvader(
-	Vector2f spawnPosition)
+void BulletUpdateComponent::spawnForInvader(Vector2f spawnPosition)
 {
 	m_MovingUp = false;
 	m_BelongsToPlayer = false;
 	m_IsSpawned = true;
 
-	srand((int)time(0));
-	m_AlienBulletSpeedModifier = (
-		((rand() % m_ModifierRandomComponent)))
-		+ m_MinimumAdditionalModifier;
+    std::random_device rd;
+    std::mt19937 mt(rd());
+    std::uniform_int_distribution<int> dist(0, 32767);
+	m_AlienBulletSpeedModifier = (((dist(mt) % m_ModifierRandomComponent))) + m_MinimumAdditionalModifier;
 
 	m_TC->getLocation().x = spawnPosition.x;
-	// Tweak the y location based on the height of the bullet 
-	// The x location already tweaked to the center of the invader
 	m_TC->getLocation().y = spawnPosition.y;
-	// Update the collider
-	m_RCC->setOrMoveCollider(
-		m_TC->getLocation().x, m_TC->
-		getLocation().y, m_TC->getSize().x, m_TC->getSize().y);
+
+	m_RCC->setOrMoveCollider(m_TC->getLocation().x, m_TC->getLocation().y, m_TC->getSize().x, m_TC->getSize().y);
 }
 
 void BulletUpdateComponent::deSpawn()
@@ -60,12 +50,10 @@ void BulletUpdateComponent::update(float fps)
 		}
 		else
 		{
-			m_TC->getLocation().y += m_Speed /
-				m_AlienBulletSpeedModifier * fps;
+			m_TC->getLocation().y += m_Speed / static_cast<float>(m_AlienBulletSpeedModifier) * fps;
 		}
 
-		if (m_TC->getLocation().y > WorldState::WORLD_HEIGHT
-			|| m_TC->getLocation().y < -2)
+		if (m_TC->getLocation().y > static_cast<float>(WorldState::WORLD_HEIGHT) || m_TC->getLocation().y < -2.0)
 		{
 			deSpawn();
 		}

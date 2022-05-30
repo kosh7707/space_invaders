@@ -3,6 +3,5 @@
 class BulletSpawner
 {
 public:
-	virtual void spawnBullet(
-		sf::Vector2f spawnLocation, bool forPlayer) = 0;
+	virtual void spawnBullet(sf::Vector2f spawnLocation, bool forPlayer) = 0;
 };
