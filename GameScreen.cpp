@@ -13,8 +13,7 @@ int WorldState::WORLD_HEIGHT;
 int WorldState::NUM_INVADERS;
 int WorldState::NUM_INVADERS_AT_START;
 
-GameScreen::GameScreen(ScreenManagerRemoteControl* smrc,
-	Vector2i res)
+GameScreen::GameScreen(ScreenManagerRemoteControl* smrc, Vector2i res)
 {
 	m_GIH = make_shared<GameInputHandler>();
 	auto guip = make_unique<GameUIPanel>(res);

@@ -1,14 +1,12 @@
 #include "GameEngine.h"
+#include <memory>
 
 GameEngine::GameEngine()
 {
-	m_Resolution.x = VideoMode::getDesktopMode().width;
-	m_Resolution.y = VideoMode::getDesktopMode().height;
-	m_Window.create(VideoMode(m_Resolution.x, m_Resolution.y),
-		"Space Invaders++", Style::Fullscreen);
+    m_Resolution.x = 800; m_Resolution.y = 600;
+    m_Window.create(VideoMode(m_Resolution.x, m_Resolution.y), "Space Invaders", Style::None);
 
-	m_ScreenManager = unique_ptr<ScreenManager>(new ScreenManager(
-		Vector2i(m_Resolution.x, m_Resolution.y)));
+	m_ScreenManager = std::make_unique<ScreenManager>(Vector2i(m_Resolution.x, m_Resolution.y));
 }
 
 void GameEngine::run()

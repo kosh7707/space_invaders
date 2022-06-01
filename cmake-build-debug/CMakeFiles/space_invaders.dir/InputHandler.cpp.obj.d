@@ -136,6 +136,7 @@ CMakeFiles/space_invaders.dir/InputHandler.cpp.obj: \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
  C:\Users\Administrator\Desktop\space_invaders\InputHandler.h \
  C:/SFML/include/SFML/Graphics.hpp C:/SFML/include/SFML/Window.hpp \
  C:/SFML/include/SFML/System.hpp C:/SFML/include/SFML/Config.hpp \
@@ -274,5 +275,4 @@ CMakeFiles/space_invaders.dir/InputHandler.cpp.obj: \
  C:\Users\Administrator\Desktop\space_invaders\GameObjectSharer.h \
  C:\Users\Administrator\Desktop\space_invaders\GraphicsComponent.h \
  C:\Users\Administrator\Desktop\space_invaders\TransformComponent.h \
- C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
  C:\Users\Administrator\Desktop\space_invaders\UpdateComponent.h

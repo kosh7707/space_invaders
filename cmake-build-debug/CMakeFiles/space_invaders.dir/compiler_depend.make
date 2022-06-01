@@ -972,7 +972,10 @@ CMakeFiles/space_invaders.dir/Button.cpp.obj: ../Button.cpp \
   C:/SFML/include/SFML/Graphics/Glsl.inl \
   C:/SFML/include/SFML/Graphics/Sprite.hpp \
   C:/SFML/include/SFML/Graphics/Text.hpp \
-  C:/SFML/include/SFML/Graphics/VertexBuffer.hpp
+  C:/SFML/include/SFML/Graphics/VertexBuffer.hpp \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
 
 CMakeFiles/space_invaders.dir/ColliderComponent.cpp.obj: ../ColliderComponent.cpp
 
@@ -3585,6 +3588,7 @@ CMakeFiles/space_invaders.dir/InputHandler.cpp.obj: ../InputHandler.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
   ../InputHandler.h \
   C:/SFML/include/SFML/Graphics.hpp \
   C:/SFML/include/SFML/Window.hpp \
@@ -3726,7 +3730,6 @@ CMakeFiles/space_invaders.dir/InputHandler.cpp.obj: ../InputHandler.cpp \
   ../GameObjectSharer.h \
   ../GraphicsComponent.h \
   ../TransformComponent.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
   ../UpdateComponent.h
 
 CMakeFiles/space_invaders.dir/InvaderUpdateComponent.cpp.obj: ../InvaderUpdateComponent.cpp \

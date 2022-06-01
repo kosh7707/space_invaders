@@ -1,7 +1,6 @@
 #include "UIPanel.h"
 
-UIPanel::UIPanel(Vector2i res, int x, int y,
-	float width, float height,
+UIPanel::UIPanel(Vector2i res, int x, int y, float width, float height,
 	int alpha, int red, int green, int blue)
 {
 	m_UIPanel.setFillColor(sf::Color(red, green, blue, alpha));

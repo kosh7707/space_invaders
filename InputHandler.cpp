@@ -1,19 +1,18 @@
 #include <sstream>
+#include <iostream>
 #include "InputHandler.h"
 
 using namespace sf;
 using namespace std;
 
-void InputHandler::initialiseInputHandler(ScreenManagerRemoteControl* sw, vector<shared_ptr<Button>> buttons,
-	                                        View* pointerToUIView, Screen* parentScreen) {
+void InputHandler::initialiseInputHandler(ScreenManagerRemoteControl* sw, vector<shared_ptr<Button>> buttons, View* pointerToUIView, Screen* parentScreen) {
 	m_ScreenManagerRemoteControl = sw;
 	m_Buttons = buttons;
 	m_PointerToUIPanelView = pointerToUIView;
 	m_ParentScreen = parentScreen;
 }
 
-void InputHandler::handleInput(RenderWindow& window,
-	Event& event)
+void InputHandler::handleInput(RenderWindow& window, Event& event)
 {
 	// Handle any key presses
 	if (event.type == Event::KeyPressed)
@@ -27,22 +26,13 @@ void InputHandler::handleInput(RenderWindow& window,
 	}
 
 	// Handle any left mouse click released
-	if (event.type == Event::MouseButtonReleased)
-	{
-		auto end = m_Buttons.end();
-
-		for (auto i = m_Buttons.begin();
-			i != end;
-			++i) {
-
-			if ((*i)->m_Collider.contains(
-				window.mapPixelToCoords(Mouse::getPosition(),
-				(*getPointerToUIView()))))
-			{
-				// Capture the text of the button that was interacted 
-				// with and pass it to the specialised version 
-				// of this class if implemented
-				handleLeftClick((*i)->m_Text, window);
+	if (event.type == Event::MouseButtonReleased) {
+        Vector2i mouse_pos {Mouse::getPosition().x - window.getPosition().x, Mouse::getPosition().y - window.getPosition().y};
+        std::cout << "x: " << window.mapPixelToCoords(mouse_pos,(*getPointerToUIView())).x
+                << ", y: " << window.mapPixelToCoords(mouse_pos,(*getPointerToUIView())).y << "\n";
+        for (const auto& it : m_Buttons) {
+			if (it->m_Collider.contains(window.mapPixelToCoords(mouse_pos,(*getPointerToUIView())))) {
+				handleLeftClick(it->m_Text, window);
 				break;
 			}
 		}

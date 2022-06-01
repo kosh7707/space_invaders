@@ -1,4 +1,5 @@
 #include "Button.h"
+#include <iostream>
 
 Button::Button(Vector2f position,
 	float width, float height,
@@ -17,8 +18,7 @@ Button::Button(Vector2f position,
 	m_ButtonText.setString(text);
 	m_Font.loadFromFile("fonts/Roboto-Bold.ttf");
 	m_ButtonText.setFont(m_Font);
-	m_ButtonText.setPosition(Vector2f((position.x + textPaddingX),
-		(position.y + textPaddingY)));
+	m_ButtonText.setPosition(Vector2f((position.x + textPaddingX), (position.y + textPaddingY)));
 
 	m_Collider = FloatRect(position, Vector2f(width, height));
 }
