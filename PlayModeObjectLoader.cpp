@@ -9,8 +9,7 @@ void PlayModeObjectLoader::loadGameObjectsForPlayMode(
 	ifstream reader(pathToFile);
 	string lineFromFile;
 
-	float x = 0, y = 0, width = 0, height = 0;
-	string value = "";
+	string value;
 	while (getline(reader, lineFromFile)) {
 		if (lineFromFile.find(ObjectTags::START_OF_OBJECT) != string::npos) {
 			GameObjectBlueprint bp;

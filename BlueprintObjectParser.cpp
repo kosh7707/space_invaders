@@ -6,7 +6,7 @@
 void BlueprintObjectParser::parseNextObjectForBlueprint(ifstream& reader, GameObjectBlueprint& bp)
 {
 	string lineFromFile;
-	string value = "";
+	string value;
 
 	while (getline(reader, lineFromFile)) {
 		if (lineFromFile.find(ObjectTags::COMPONENT) != string::npos) {

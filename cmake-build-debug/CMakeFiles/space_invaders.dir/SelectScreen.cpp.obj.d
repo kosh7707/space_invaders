@@ -251,11 +251,6 @@ CMakeFiles/space_invaders.dir/SelectScreen.cpp.obj: \
  C:/SFML/include/SFML/Graphics/VertexBuffer.hpp \
  C:\Users\Administrator\Desktop\space_invaders\InputHandler.h \
  C:\Users\Administrator\Desktop\space_invaders\Button.h \
- C:\Users\Administrator\Desktop\space_invaders\ScreenManagerRemoteControl.h \
- C:\Users\Administrator\Desktop\space_invaders\GameObject.h \
- C:\Users\Administrator\Desktop\space_invaders\Component.h \
- C:\Users\Administrator\Desktop\space_invaders\GameObjectSharer.h \
- C:\Users\Administrator\Desktop\space_invaders\GraphicsComponent.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_raw_storage_iter.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/align.h \
@@ -269,11 +264,6 @@ CMakeFiles/space_invaders.dir/SelectScreen.cpp.obj: \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h \
- C:\Users\Administrator\Desktop\space_invaders\TransformComponent.h \
- C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
- C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
- C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
- C:\Users\Administrator\Desktop\space_invaders\UpdateComponent.h \
  C:\Users\Administrator\Desktop\space_invaders\UIPanel.h \
  C:\Users\Administrator\Desktop\space_invaders\SelectUIPanel.h \
  C:\Users\Administrator\Desktop\space_invaders\SelectInputHandler.h

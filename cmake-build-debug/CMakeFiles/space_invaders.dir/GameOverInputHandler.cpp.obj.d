@@ -265,16 +265,6 @@ CMakeFiles/space_invaders.dir/GameOverInputHandler.cpp.obj: \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h \
- C:\Users\Administrator\Desktop\space_invaders\ScreenManagerRemoteControl.h \
- C:\Users\Administrator\Desktop\space_invaders\GameObject.h \
- C:\Users\Administrator\Desktop\space_invaders\Component.h \
- C:\Users\Administrator\Desktop\space_invaders\GameObjectSharer.h \
- C:\Users\Administrator\Desktop\space_invaders\GraphicsComponent.h \
- C:\Users\Administrator\Desktop\space_invaders\TransformComponent.h \
- C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
- C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
- C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
- C:\Users\Administrator\Desktop\space_invaders\UpdateComponent.h \
  C:\Users\Administrator\Desktop\space_invaders\SoundEngine.h \
  C:/SFML/include/SFML/Audio.hpp \
  C:/SFML/include/SFML/Audio/InputSoundFile.hpp \
@@ -297,4 +287,24 @@ CMakeFiles/space_invaders.dir/GameOverInputHandler.cpp.obj: \
  C:/SFML/include/SFML/Audio/SoundFileReader.hpp \
  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp \
  C:\Users\Administrator\Desktop\space_invaders\VolumeControl.h \
- C:\Users\Administrator\Desktop\space_invaders\WorldState.h
+ C:\Users\Administrator\Desktop\space_invaders\WorldState.h \
+ C:\Users\Administrator\Desktop\space_invaders\ScreenManager.h \
+ C:\Users\Administrator\Desktop\space_invaders\GameScreen.h \
+ C:\Users\Administrator\Desktop\space_invaders\GameInputHandler.h \
+ C:\Users\Administrator\Desktop\space_invaders\PlayerUpdateComponent.h \
+ C:\Users\Administrator\Desktop\space_invaders\UpdateComponent.h \
+ C:\Users\Administrator\Desktop\space_invaders\Component.h \
+ C:\Users\Administrator\Desktop\space_invaders\GameObjectSharer.h \
+ C:\Users\Administrator\Desktop\space_invaders\TransformComponent.h \
+ C:\Users\Administrator\Desktop\space_invaders\RectColliderComponent.h \
+ C:\Users\Administrator\Desktop\space_invaders\ColliderComponent.h \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+ C:\Users\Administrator\Desktop\space_invaders\GameObject.h \
+ C:\Users\Administrator\Desktop\space_invaders\GraphicsComponent.h \
+ C:\Users\Administrator\Desktop\space_invaders\BulletSpawner.h \
+ C:\Users\Administrator\Desktop\space_invaders\PhysicsEnginePlayMode.h \
+ C:\Users\Administrator\Desktop\space_invaders\SelectScreen.h \
+ C:\Users\Administrator\Desktop\space_invaders\LevelManager.h \
+ C:\Users\Administrator\Desktop\space_invaders\BitmapStore.h

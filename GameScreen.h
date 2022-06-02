@@ -4,11 +4,11 @@
 #include "GameOverInputHandler.h"
 #include "BulletSpawner.h"
 #include "PhysicsEnginePlayMode.h"
+#include "ScreenManager.h"
 
 class GameScreen : public Screen, public BulletSpawner
 {
 private:
-	ScreenManagerRemoteControl* m_ScreenManagerRemoteControl;
 	shared_ptr<GameInputHandler> m_GIH;
 	PhysicsEnginePlayMode m_PhysicsEnginePlayMode;
 
@@ -27,10 +27,10 @@ private:
 public:
 	static bool m_GameOver;
 
-	GameScreen(ScreenManagerRemoteControl* smrc, Vector2i res);
+	GameScreen(Vector2i res);
 	void initialise() override;
-	void virtual update(float fps);
-	void virtual draw(RenderWindow& window);
+	void update(float fps) override;
+	void draw(RenderWindow& window) override;
 
 	BulletSpawner* getBulletSpawner();
 

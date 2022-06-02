@@ -5,8 +5,7 @@
 using namespace sf;
 using namespace std;
 
-void InputHandler::initialiseInputHandler(ScreenManagerRemoteControl* sw, vector<shared_ptr<Button>> buttons, View* pointerToUIView, Screen* parentScreen) {
-	m_ScreenManagerRemoteControl = sw;
+void InputHandler::initialiseInputHandler(vector<shared_ptr<Button>> buttons, View* pointerToUIView, Screen* parentScreen) {
 	m_Buttons = std::move(buttons);
 	m_PointerToUIPanelView = pointerToUIView;
 	m_ParentScreen = parentScreen;
@@ -58,12 +57,6 @@ void InputHandler::handleLeftClick(std::
 View* InputHandler::getPointerToUIView()
 {
 	return m_PointerToUIPanelView;
-}
-
-ScreenManagerRemoteControl*
-InputHandler::getPointerToScreenManagerRemoteControl()
-{
-	return m_ScreenManagerRemoteControl;
 }
 
 Screen* InputHandler::getmParentScreen() {

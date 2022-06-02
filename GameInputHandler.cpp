@@ -7,15 +7,10 @@ class BulletSpawner;
 void GameInputHandler::initialize() 
 {
 	m_PUC = static_pointer_cast<PlayerUpdateComponent>
-		(getPointerToScreenManagerRemoteControl()
-			->shareGameObjectSharer()
-			.findFirstObjectWithTag("Player")
-			.getComponentByTypeAndSpecificType(
-				"update", "player"));
-
-	m_PTC = getPointerToScreenManagerRemoteControl()->
-		shareGameObjectSharer().findFirstObjectWithTag(
-			"Player").getTransformComponent();
+		(ScreenManager::shareGameObjectSharer()
+        .findFirstObjectWithTag("Player")
+        .getComponentByTypeAndSpecificType("update", "player"));
+	m_PTC = ScreenManager::shareGameObjectSharer().findFirstObjectWithTag("Player").getTransformComponent();
 }
 
 void GameInputHandler::handleGamepad()
@@ -67,8 +62,7 @@ void GameInputHandler::handleKeyPressed(
 	if (event.key.code == Keyboard::Escape)
 	{
 		SoundEngine::playClick();
-		getPointerToScreenManagerRemoteControl()->
-			SwitchScreens("Select");
+        ScreenManager::SwitchScreens("Select");
 	}	
 
 	if (event.key.code == Keyboard::Left)

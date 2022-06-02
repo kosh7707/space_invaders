@@ -1,17 +1,4 @@
-#pragma once
-#include <string>
-#include <vector>
-#include "GameObject.h"
-#include "GameObjectSharer.h"
+#ifndef SPACE_INVADERS_SCREENMANAGERREMOTECONTROL_H
+#define SPACE_INVADERS_SCREENMANAGERREMOTECONTROL_H
 
-using namespace std;
-
-class ScreenManagerRemoteControl
-{
-public:
-	virtual void SwitchScreens(string screenToSwitchTo) = 0;
-	virtual void loadLevelInPlayMode(string screenToLoad) = 0;
-	virtual vector<GameObject>& getGameObjects() = 0;
-	virtual GameObjectSharer& shareGameObjectSharer() = 0;
-};
-
+#endif //SPACE_INVADERS_SCREENMANAGERREMOTECONTROL_H

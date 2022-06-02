@@ -1,3 +1,1 @@
-/*********************************
-******THIS IS AN INTERFACE********
-*********************************/
+#include "ScreenManagerRemoteControl.h"

@@ -1,6 +1,7 @@
 #include "SelectInputHandler.h"
 #include "SoundEngine.h"
 #include "WorldState.h"
+#include "ScreenManager.h"
 #include <iostream>
 
 int WorldState::WAVE_NUMBER;
@@ -15,7 +16,7 @@ void SelectInputHandler::handleLeftClick(std::string& buttonInteractedWith, Rend
 	if (buttonInteractedWith == "Play") {
 		SoundEngine::playClick();
 		WorldState::WAVE_NUMBER = 0;
-		getPointerToScreenManagerRemoteControl()->loadLevelInPlayMode("level1");
+        ScreenManager::loadLevelInPlayMode("level1");
 	}
 	else if (buttonInteractedWith == "Quit") {
 		SoundEngine::playClick();

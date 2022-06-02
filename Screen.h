@@ -3,7 +3,6 @@
 #include <vector>
 #include "InputHandler.h"
 #include "UIPanel.h"
-#include "ScreenManagerRemoteControl.h"
 
 class InputHandler;
 
@@ -13,12 +12,14 @@ private:
 	vector<unique_ptr<UIPanel>> m_Panels;
 
 protected:
-	void addPanel(unique_ptr<UIPanel> p, ScreenManagerRemoteControl* smrc, shared_ptr<InputHandler> ih);
+	void addPanel(unique_ptr<UIPanel> p, const shared_ptr<InputHandler>& ih);
 
 public:
 	virtual void initialise();
-	void virtual update(float fps);
-	void virtual draw(RenderWindow& window);
+
+    virtual void update(float fps);
+
+    virtual void draw(RenderWindow& window);
 	void handleInput(RenderWindow& window);
 
 	View m_View;

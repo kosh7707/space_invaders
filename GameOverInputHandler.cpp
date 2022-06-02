@@ -1,6 +1,7 @@
 #include "GameOverInputHandler.h"
 #include "SoundEngine.h"
 #include "WorldState.h"
+#include "ScreenManager.h"
 #include <iostream>
 
 void GameOverInputHandler::handleKeyPressed(Event& event,
@@ -9,8 +10,7 @@ void GameOverInputHandler::handleKeyPressed(Event& event,
 	if (event.key.code == Keyboard::Escape)
 	{
 		SoundEngine::playClick();
-		getPointerToScreenManagerRemoteControl()->
-			SwitchScreens("Select");
+		ScreenManager::SwitchScreens("Select");
 	}
 }
 
@@ -20,13 +20,11 @@ void GameOverInputHandler::handleLeftClick(
 	if (buttonInteractedWith == "Play") {
 		SoundEngine::playClick();
 		WorldState::WAVE_NUMBER = 0;
-		getPointerToScreenManagerRemoteControl()->
-			loadLevelInPlayMode("level1");
+        ScreenManager::loadLevelInPlayMode("level1");
 	}
 
 	else if (buttonInteractedWith == "Home") {
 		SoundEngine::playClick();
-		getPointerToScreenManagerRemoteControl()->
-			SwitchScreens("Select");
+        ScreenManager::SwitchScreens("Select");
 	}
 }

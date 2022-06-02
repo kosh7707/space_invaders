@@ -20,7 +20,7 @@ FILE(
         "*.cpp"
 )
 
-add_executable(space_invaders ${SOURCES} GameObject.cpp InputHandler.cpp VolumeControl.h)
+add_executable(space_invaders ${SOURCES} GameObject.cpp InputHandler.cpp VolumeControl.h ScreenManagerRemoteControl.cpp ScreenManagerRemoteControl.h)
 
 target_link_libraries(space_invaders sfml-graphics sfml-audio)
 

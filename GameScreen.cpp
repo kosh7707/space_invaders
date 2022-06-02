@@ -13,17 +13,16 @@ int WorldState::WORLD_HEIGHT;
 int WorldState::NUM_INVADERS;
 int WorldState::NUM_INVADERS_AT_START;
 
-GameScreen::GameScreen(ScreenManagerRemoteControl* smrc, Vector2i res)
+GameScreen::GameScreen(Vector2i res)
 {
 	m_GIH = make_shared<GameInputHandler>();
 	auto guip = make_unique<GameUIPanel>(res);
-	addPanel(move(guip), smrc, m_GIH);
+	addPanel(move(guip), m_GIH);
 
 	auto m_GOIH = make_shared<GameOverInputHandler>();
 	auto gouip = make_unique<GameOverUIPanel>(res);
-	addPanel(move(gouip), smrc, m_GOIH);
+	addPanel(move(gouip), m_GOIH);
 
-	m_ScreenManagerRemoteControl = smrc;
 	float screenRatio = VideoMode::getDesktopMode().width /
 		VideoMode::getDesktopMode().height;
 
@@ -47,10 +46,10 @@ GameScreen::GameScreen(ScreenManagerRemoteControl* smrc, Vector2i res)
 void GameScreen::initialise()
 {
 	m_GIH->initialize();
-	m_PhysicsEnginePlayMode.initilize(m_ScreenManagerRemoteControl->shareGameObjectSharer());
+	m_PhysicsEnginePlayMode.initilize(ScreenManager::shareGameObjectSharer());
 	WorldState::NUM_INVADERS = 0;
 	int i = 0;
-    for (auto& it : m_ScreenManagerRemoteControl->getGameObjects()) {
+    for (auto& it : ScreenManager::getGameObjects()) {
 		if (it.getTag() == "bullet") {
 			m_BulletObjectLocations.push_back(i);
 		}
@@ -83,12 +82,10 @@ void GameScreen::update(float fps)
 		if (m_WaitingToSpawnBulletForPlayer)
 		{
 			static_pointer_cast<BulletUpdateComponent>(
-				m_ScreenManagerRemoteControl->
-				getGameObjects()
-				[m_BulletObjectLocations[m_NextBullet]].
-				getFirstUpdateComponent())->
-				spawnForPlayer(m_PlayerBulletSpawnLocation);
-
+                    ScreenManager::getGameObjects()
+				    [m_BulletObjectLocations[m_NextBullet]].
+				    getFirstUpdateComponent())->
+				    spawnForPlayer(m_PlayerBulletSpawnLocation);
 			m_WaitingToSpawnBulletForPlayer = false;
 			m_NextBullet++;
 
@@ -101,11 +98,10 @@ void GameScreen::update(float fps)
 		if (m_WaitingToSpawnBulletForInvader)
 		{
 			static_pointer_cast<BulletUpdateComponent>(
-				m_ScreenManagerRemoteControl->
-				getGameObjects()
-				[m_BulletObjectLocations[m_NextBullet]].
-				getFirstUpdateComponent())->
-				spawnForInvader(m_InvaderBulletSpawnLocation);
+                    ScreenManager::getGameObjects()
+				    [m_BulletObjectLocations[m_NextBullet]].
+				    getFirstUpdateComponent())->
+				    spawnForInvader(m_InvaderBulletSpawnLocation);
 
 			m_WaitingToSpawnBulletForInvader = false;
 			m_NextBullet++;
@@ -116,32 +112,17 @@ void GameScreen::update(float fps)
 			}
 		}
 
-		auto it = m_ScreenManagerRemoteControl->
-			getGameObjects().begin();
+		for (auto& it : ScreenManager::getGameObjects())
+			it.update(fps);
 
-		auto end = m_ScreenManagerRemoteControl->
-			getGameObjects().end();
+		m_PhysicsEnginePlayMode.detectCollisions(ScreenManager::getGameObjects(), m_BulletObjectLocations);
 
-		for (it;
-			it != end;
-			++it)
-		{
-			(*it).update(fps);
-		}
-
-		m_PhysicsEnginePlayMode.detectCollisions(
-			m_ScreenManagerRemoteControl->getGameObjects(),
-			m_BulletObjectLocations);
-
-		if (WorldState::NUM_INVADERS <= 0)
-		{
+		if (WorldState::NUM_INVADERS <= 0) {
 			WorldState::WAVE_NUMBER++;
-			m_ScreenManagerRemoteControl->
-				loadLevelInPlayMode("level1");
+            ScreenManager::loadLevelInPlayMode("level1");
 		}
 
-		if (WorldState::LIVES <= 0)
-		{
+		if (WorldState::LIVES <= 0) {
 			m_GameOver = true;
 		}
 	}
@@ -149,30 +130,17 @@ void GameScreen::update(float fps)
 
 void GameScreen::draw(RenderWindow& window)
 {
-	// Change to this screen's view to draw
 	window.setView(m_View);
 	window.draw(m_BackgroundSprite);
 
-	// Draw the GameObject instances
-	auto it = m_ScreenManagerRemoteControl->
-		getGameObjects().begin();
 
-	auto end = m_ScreenManagerRemoteControl->
-		getGameObjects().end();
+    for (auto& it : ScreenManager::getGameObjects())
+		it.draw(window);
 
-	for (it;
-		it != end;
-		++it)
-	{
-		(*it).draw(window);
-	}
-
-	// Draw the UIPanel view(s)
 	Screen::draw(window);
 }
 
 
-BulletSpawner* GameScreen::getBulletSpawner()
-{
+BulletSpawner* GameScreen::getBulletSpawner() {
 	return this;
 }

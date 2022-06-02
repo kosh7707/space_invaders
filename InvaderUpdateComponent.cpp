@@ -40,9 +40,6 @@ void InvaderUpdateComponent::update(float fps)
 
 			m_BulletSpawner->spawnBullet(spawnLocation, false);
 			srand(m_RandSeed);
-			int mTimeBetweenShots = (((rand() % 10)) + 1) /
-				WorldState::WAVE_NUMBER;
-
 			m_TimeSinceLastShot = 0;
 		}
 	}

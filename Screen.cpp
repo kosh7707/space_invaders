@@ -2,8 +2,8 @@
 
 void Screen::initialise() {}
 
-void Screen::addPanel(unique_ptr<UIPanel> uip, ScreenManagerRemoteControl* smrc, shared_ptr<InputHandler> ih) {
-	ih->initialiseInputHandler(smrc, uip->getButtons(), &uip->m_View, this);
+void Screen::addPanel(unique_ptr<UIPanel> uip, const shared_ptr<InputHandler>& ih) {
+	ih->initialiseInputHandler(uip->getButtons(), &uip->m_View, this);
 	m_Panels.push_back(move(uip));
 	m_InputHandlers.push_back(ih);
 }

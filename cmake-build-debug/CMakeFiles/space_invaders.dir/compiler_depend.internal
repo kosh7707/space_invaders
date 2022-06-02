@@ -1246,11 +1246,6 @@ CMakeFiles/space_invaders.dir/GameEngine.cpp.obj
  C:/Users/Administrator/Desktop/space_invaders/Screen.h
  C:/Users/Administrator/Desktop/space_invaders/InputHandler.h
  C:/Users/Administrator/Desktop/space_invaders/Button.h
- C:/Users/Administrator/Desktop/space_invaders/ScreenManagerRemoteControl.h
- C:/Users/Administrator/Desktop/space_invaders/GameObject.h
- C:/Users/Administrator/Desktop/space_invaders/Component.h
- C:/Users/Administrator/Desktop/space_invaders/GameObjectSharer.h
- C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_raw_storage_iter.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/align.h
@@ -1264,16 +1259,20 @@ CMakeFiles/space_invaders.dir/GameEngine.cpp.obj
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h
- C:/Users/Administrator/Desktop/space_invaders/TransformComponent.h
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
- C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
  C:/Users/Administrator/Desktop/space_invaders/UIPanel.h
  C:/Users/Administrator/Desktop/space_invaders/GameInputHandler.h
  C:/Users/Administrator/Desktop/space_invaders/PlayerUpdateComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/Component.h
+ C:/Users/Administrator/Desktop/space_invaders/GameObjectSharer.h
+ C:/Users/Administrator/Desktop/space_invaders/TransformComponent.h
  C:/Users/Administrator/Desktop/space_invaders/RectColliderComponent.h
  C:/Users/Administrator/Desktop/space_invaders/ColliderComponent.h
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
+ C:/Users/Administrator/Desktop/space_invaders/GameObject.h
+ C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
  C:/Users/Administrator/Desktop/space_invaders/GameOverInputHandler.h
  C:/Users/Administrator/Desktop/space_invaders/BulletSpawner.h
  C:/Users/Administrator/Desktop/space_invaders/PhysicsEnginePlayMode.h
@@ -1574,19 +1573,18 @@ CMakeFiles/space_invaders.dir/GameInputHandler.cpp.obj
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h
- C:/Users/Administrator/Desktop/space_invaders/ScreenManagerRemoteControl.h
- C:/Users/Administrator/Desktop/space_invaders/GameObject.h
+ C:/Users/Administrator/Desktop/space_invaders/PlayerUpdateComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
  C:/Users/Administrator/Desktop/space_invaders/Component.h
  C:/Users/Administrator/Desktop/space_invaders/GameObjectSharer.h
- C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
  C:/Users/Administrator/Desktop/space_invaders/TransformComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/RectColliderComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/ColliderComponent.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
- C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
- C:/Users/Administrator/Desktop/space_invaders/PlayerUpdateComponent.h
- C:/Users/Administrator/Desktop/space_invaders/RectColliderComponent.h
- C:/Users/Administrator/Desktop/space_invaders/ColliderComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/GameObject.h
+ C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
  C:/Users/Administrator/Desktop/space_invaders/SoundEngine.h
  C:/SFML/include/SFML/Audio.hpp
  C:/SFML/include/SFML/Audio/InputSoundFile.hpp
@@ -1614,6 +1612,10 @@ CMakeFiles/space_invaders.dir/GameInputHandler.cpp.obj
  C:/Users/Administrator/Desktop/space_invaders/GameOverInputHandler.h
  C:/Users/Administrator/Desktop/space_invaders/BulletSpawner.h
  C:/Users/Administrator/Desktop/space_invaders/PhysicsEnginePlayMode.h
+ C:/Users/Administrator/Desktop/space_invaders/ScreenManager.h
+ C:/Users/Administrator/Desktop/space_invaders/SelectScreen.h
+ C:/Users/Administrator/Desktop/space_invaders/LevelManager.h
+ C:/Users/Administrator/Desktop/space_invaders/BitmapStore.h
 
 CMakeFiles/space_invaders.dir/GameObject.cpp.obj
  C:/Users/Administrator/Desktop/space_invaders/GameObject.cpp
@@ -2575,16 +2577,6 @@ CMakeFiles/space_invaders.dir/GameOverInputHandler.cpp.obj
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h
- C:/Users/Administrator/Desktop/space_invaders/ScreenManagerRemoteControl.h
- C:/Users/Administrator/Desktop/space_invaders/GameObject.h
- C:/Users/Administrator/Desktop/space_invaders/Component.h
- C:/Users/Administrator/Desktop/space_invaders/GameObjectSharer.h
- C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
- C:/Users/Administrator/Desktop/space_invaders/TransformComponent.h
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
- C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
  C:/Users/Administrator/Desktop/space_invaders/SoundEngine.h
  C:/SFML/include/SFML/Audio.hpp
  C:/SFML/include/SFML/Audio/InputSoundFile.hpp
@@ -2608,6 +2600,26 @@ CMakeFiles/space_invaders.dir/GameOverInputHandler.cpp.obj
  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp
  C:/Users/Administrator/Desktop/space_invaders/VolumeControl.h
  C:/Users/Administrator/Desktop/space_invaders/WorldState.h
+ C:/Users/Administrator/Desktop/space_invaders/ScreenManager.h
+ C:/Users/Administrator/Desktop/space_invaders/GameScreen.h
+ C:/Users/Administrator/Desktop/space_invaders/GameInputHandler.h
+ C:/Users/Administrator/Desktop/space_invaders/PlayerUpdateComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/Component.h
+ C:/Users/Administrator/Desktop/space_invaders/GameObjectSharer.h
+ C:/Users/Administrator/Desktop/space_invaders/TransformComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/RectColliderComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/ColliderComponent.h
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
+ C:/Users/Administrator/Desktop/space_invaders/GameObject.h
+ C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/BulletSpawner.h
+ C:/Users/Administrator/Desktop/space_invaders/PhysicsEnginePlayMode.h
+ C:/Users/Administrator/Desktop/space_invaders/SelectScreen.h
+ C:/Users/Administrator/Desktop/space_invaders/LevelManager.h
+ C:/Users/Administrator/Desktop/space_invaders/BitmapStore.h
 
 CMakeFiles/space_invaders.dir/GameOverUIPanel.cpp.obj
  C:/Users/Administrator/Desktop/space_invaders/GameOverUIPanel.cpp
@@ -2880,23 +2892,26 @@ CMakeFiles/space_invaders.dir/GameOverUIPanel.cpp.obj
  C:/Users/Administrator/Desktop/space_invaders/GameScreen.h
  C:/Users/Administrator/Desktop/space_invaders/Screen.h
  C:/Users/Administrator/Desktop/space_invaders/InputHandler.h
- C:/Users/Administrator/Desktop/space_invaders/ScreenManagerRemoteControl.h
- C:/Users/Administrator/Desktop/space_invaders/GameObject.h
+ C:/Users/Administrator/Desktop/space_invaders/GameInputHandler.h
+ C:/Users/Administrator/Desktop/space_invaders/PlayerUpdateComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
  C:/Users/Administrator/Desktop/space_invaders/Component.h
  C:/Users/Administrator/Desktop/space_invaders/GameObjectSharer.h
- C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
  C:/Users/Administrator/Desktop/space_invaders/TransformComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/RectColliderComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/ColliderComponent.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
- C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
- C:/Users/Administrator/Desktop/space_invaders/GameInputHandler.h
- C:/Users/Administrator/Desktop/space_invaders/PlayerUpdateComponent.h
- C:/Users/Administrator/Desktop/space_invaders/RectColliderComponent.h
- C:/Users/Administrator/Desktop/space_invaders/ColliderComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/GameObject.h
+ C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
  C:/Users/Administrator/Desktop/space_invaders/GameOverInputHandler.h
  C:/Users/Administrator/Desktop/space_invaders/BulletSpawner.h
  C:/Users/Administrator/Desktop/space_invaders/PhysicsEnginePlayMode.h
+ C:/Users/Administrator/Desktop/space_invaders/ScreenManager.h
+ C:/Users/Administrator/Desktop/space_invaders/SelectScreen.h
+ C:/Users/Administrator/Desktop/space_invaders/LevelManager.h
+ C:/Users/Administrator/Desktop/space_invaders/BitmapStore.h
 
 CMakeFiles/space_invaders.dir/GameScreen.cpp.obj
  C:/Users/Administrator/Desktop/space_invaders/GameScreen.cpp
@@ -3154,11 +3169,6 @@ CMakeFiles/space_invaders.dir/GameScreen.cpp.obj
  C:/SFML/include/SFML/Graphics/VertexBuffer.hpp
  C:/Users/Administrator/Desktop/space_invaders/InputHandler.h
  C:/Users/Administrator/Desktop/space_invaders/Button.h
- C:/Users/Administrator/Desktop/space_invaders/ScreenManagerRemoteControl.h
- C:/Users/Administrator/Desktop/space_invaders/GameObject.h
- C:/Users/Administrator/Desktop/space_invaders/Component.h
- C:/Users/Administrator/Desktop/space_invaders/GameObjectSharer.h
- C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_raw_storage_iter.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/align.h
@@ -3172,19 +3182,27 @@ CMakeFiles/space_invaders.dir/GameScreen.cpp.obj
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h
- C:/Users/Administrator/Desktop/space_invaders/TransformComponent.h
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
- C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
  C:/Users/Administrator/Desktop/space_invaders/UIPanel.h
  C:/Users/Administrator/Desktop/space_invaders/GameInputHandler.h
  C:/Users/Administrator/Desktop/space_invaders/PlayerUpdateComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/Component.h
+ C:/Users/Administrator/Desktop/space_invaders/GameObjectSharer.h
+ C:/Users/Administrator/Desktop/space_invaders/TransformComponent.h
  C:/Users/Administrator/Desktop/space_invaders/RectColliderComponent.h
  C:/Users/Administrator/Desktop/space_invaders/ColliderComponent.h
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
+ C:/Users/Administrator/Desktop/space_invaders/GameObject.h
+ C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
  C:/Users/Administrator/Desktop/space_invaders/GameOverInputHandler.h
  C:/Users/Administrator/Desktop/space_invaders/BulletSpawner.h
  C:/Users/Administrator/Desktop/space_invaders/PhysicsEnginePlayMode.h
+ C:/Users/Administrator/Desktop/space_invaders/ScreenManager.h
+ C:/Users/Administrator/Desktop/space_invaders/SelectScreen.h
+ C:/Users/Administrator/Desktop/space_invaders/LevelManager.h
+ C:/Users/Administrator/Desktop/space_invaders/BitmapStore.h
  C:/Users/Administrator/Desktop/space_invaders/GameUIPanel.h
  C:/Users/Administrator/Desktop/space_invaders/GameOverUIPanel.h
  C:/Users/Administrator/Desktop/space_invaders/WorldState.h
@@ -3470,14 +3488,14 @@ CMakeFiles/space_invaders.dir/GraphicsComponent.cpp.obj
 
 CMakeFiles/space_invaders.dir/InputHandler.cpp.obj
  C:/Users/Administrator/Desktop/space_invaders/InputHandler.cpp
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/pstl_config.h
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h
@@ -3602,11 +3620,11 @@ CMakeFiles/space_invaders.dir/InputHandler.cpp.obj
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/utility
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_relops.h
  C:/Users/Administrator/Desktop/space_invaders/InputHandler.h
  C:/SFML/include/SFML/Graphics.hpp
  C:/SFML/include/SFML/Window.hpp
@@ -3626,8 +3644,6 @@ CMakeFiles/space_invaders.dir/InputHandler.cpp.obj
  C:/SFML/include/SFML/System/String.hpp
  C:/SFML/include/SFML/System/Utf.hpp
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/algorithm
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/utility
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_relops.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algo.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/algorithmfwd.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h
@@ -3742,13 +3758,6 @@ CMakeFiles/space_invaders.dir/InputHandler.cpp.obj
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h
- C:/Users/Administrator/Desktop/space_invaders/ScreenManagerRemoteControl.h
- C:/Users/Administrator/Desktop/space_invaders/GameObject.h
- C:/Users/Administrator/Desktop/space_invaders/Component.h
- C:/Users/Administrator/Desktop/space_invaders/GameObjectSharer.h
- C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
- C:/Users/Administrator/Desktop/space_invaders/TransformComponent.h
- C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
 
 CMakeFiles/space_invaders.dir/InvaderUpdateComponent.cpp.obj
  C:/Users/Administrator/Desktop/space_invaders/InvaderUpdateComponent.cpp
@@ -5827,11 +5836,6 @@ CMakeFiles/space_invaders.dir/Screen.cpp.obj
  C:/SFML/include/SFML/Graphics/VertexBuffer.hpp
  C:/Users/Administrator/Desktop/space_invaders/InputHandler.h
  C:/Users/Administrator/Desktop/space_invaders/Button.h
- C:/Users/Administrator/Desktop/space_invaders/ScreenManagerRemoteControl.h
- C:/Users/Administrator/Desktop/space_invaders/GameObject.h
- C:/Users/Administrator/Desktop/space_invaders/Component.h
- C:/Users/Administrator/Desktop/space_invaders/GameObjectSharer.h
- C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_raw_storage_iter.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/align.h
@@ -5845,11 +5849,6 @@ CMakeFiles/space_invaders.dir/Screen.cpp.obj
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h
- C:/Users/Administrator/Desktop/space_invaders/TransformComponent.h
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
- C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
  C:/Users/Administrator/Desktop/space_invaders/UIPanel.h
 
 CMakeFiles/space_invaders.dir/ScreenManager.cpp.obj
@@ -6109,11 +6108,6 @@ CMakeFiles/space_invaders.dir/ScreenManager.cpp.obj
  C:/Users/Administrator/Desktop/space_invaders/Screen.h
  C:/Users/Administrator/Desktop/space_invaders/InputHandler.h
  C:/Users/Administrator/Desktop/space_invaders/Button.h
- C:/Users/Administrator/Desktop/space_invaders/ScreenManagerRemoteControl.h
- C:/Users/Administrator/Desktop/space_invaders/GameObject.h
- C:/Users/Administrator/Desktop/space_invaders/Component.h
- C:/Users/Administrator/Desktop/space_invaders/GameObjectSharer.h
- C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_raw_storage_iter.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/align.h
@@ -6127,25 +6121,32 @@ CMakeFiles/space_invaders.dir/ScreenManager.cpp.obj
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h
- C:/Users/Administrator/Desktop/space_invaders/TransformComponent.h
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
- C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
  C:/Users/Administrator/Desktop/space_invaders/UIPanel.h
  C:/Users/Administrator/Desktop/space_invaders/GameInputHandler.h
  C:/Users/Administrator/Desktop/space_invaders/PlayerUpdateComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/Component.h
+ C:/Users/Administrator/Desktop/space_invaders/GameObjectSharer.h
+ C:/Users/Administrator/Desktop/space_invaders/TransformComponent.h
  C:/Users/Administrator/Desktop/space_invaders/RectColliderComponent.h
  C:/Users/Administrator/Desktop/space_invaders/ColliderComponent.h
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
+ C:/Users/Administrator/Desktop/space_invaders/GameObject.h
+ C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
  C:/Users/Administrator/Desktop/space_invaders/GameOverInputHandler.h
  C:/Users/Administrator/Desktop/space_invaders/BulletSpawner.h
  C:/Users/Administrator/Desktop/space_invaders/PhysicsEnginePlayMode.h
  C:/Users/Administrator/Desktop/space_invaders/SelectScreen.h
  C:/Users/Administrator/Desktop/space_invaders/LevelManager.h
  C:/Users/Administrator/Desktop/space_invaders/BitmapStore.h
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cassert
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/x86_64-w64-mingw32/include/assert.h
 
 CMakeFiles/space_invaders.dir/ScreenManagerRemoteControl.cpp.obj
  C:/Users/Administrator/Desktop/space_invaders/ScreenManagerRemoteControl.cpp
+ C:/Users/Administrator/Desktop/space_invaders/ScreenManagerRemoteControl.h
 
 CMakeFiles/space_invaders.dir/SelectInputHandler.cpp.obj
  C:/Users/Administrator/Desktop/space_invaders/SelectInputHandler.cpp
@@ -6417,16 +6418,6 @@ CMakeFiles/space_invaders.dir/SelectInputHandler.cpp.obj
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h
- C:/Users/Administrator/Desktop/space_invaders/ScreenManagerRemoteControl.h
- C:/Users/Administrator/Desktop/space_invaders/GameObject.h
- C:/Users/Administrator/Desktop/space_invaders/Component.h
- C:/Users/Administrator/Desktop/space_invaders/GameObjectSharer.h
- C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
- C:/Users/Administrator/Desktop/space_invaders/TransformComponent.h
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
- C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
  C:/Users/Administrator/Desktop/space_invaders/SoundEngine.h
  C:/SFML/include/SFML/Audio.hpp
  C:/SFML/include/SFML/Audio/InputSoundFile.hpp
@@ -6450,6 +6441,27 @@ CMakeFiles/space_invaders.dir/SelectInputHandler.cpp.obj
  C:/SFML/include/SFML/Audio/SoundFileWriter.hpp
  C:/Users/Administrator/Desktop/space_invaders/VolumeControl.h
  C:/Users/Administrator/Desktop/space_invaders/WorldState.h
+ C:/Users/Administrator/Desktop/space_invaders/ScreenManager.h
+ C:/Users/Administrator/Desktop/space_invaders/GameScreen.h
+ C:/Users/Administrator/Desktop/space_invaders/GameInputHandler.h
+ C:/Users/Administrator/Desktop/space_invaders/PlayerUpdateComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/Component.h
+ C:/Users/Administrator/Desktop/space_invaders/GameObjectSharer.h
+ C:/Users/Administrator/Desktop/space_invaders/TransformComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/RectColliderComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/ColliderComponent.h
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
+ C:/Users/Administrator/Desktop/space_invaders/GameObject.h
+ C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/GameOverInputHandler.h
+ C:/Users/Administrator/Desktop/space_invaders/BulletSpawner.h
+ C:/Users/Administrator/Desktop/space_invaders/PhysicsEnginePlayMode.h
+ C:/Users/Administrator/Desktop/space_invaders/SelectScreen.h
+ C:/Users/Administrator/Desktop/space_invaders/LevelManager.h
+ C:/Users/Administrator/Desktop/space_invaders/BitmapStore.h
 
 CMakeFiles/space_invaders.dir/SelectScreen.cpp.obj
  C:/Users/Administrator/Desktop/space_invaders/SelectScreen.cpp
@@ -6707,11 +6719,6 @@ CMakeFiles/space_invaders.dir/SelectScreen.cpp.obj
  C:/SFML/include/SFML/Graphics/VertexBuffer.hpp
  C:/Users/Administrator/Desktop/space_invaders/InputHandler.h
  C:/Users/Administrator/Desktop/space_invaders/Button.h
- C:/Users/Administrator/Desktop/space_invaders/ScreenManagerRemoteControl.h
- C:/Users/Administrator/Desktop/space_invaders/GameObject.h
- C:/Users/Administrator/Desktop/space_invaders/Component.h
- C:/Users/Administrator/Desktop/space_invaders/GameObjectSharer.h
- C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_raw_storage_iter.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/align.h
@@ -6725,11 +6732,6 @@ CMakeFiles/space_invaders.dir/SelectScreen.cpp.obj
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h
- C:/Users/Administrator/Desktop/space_invaders/TransformComponent.h
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
- C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
  C:/Users/Administrator/Desktop/space_invaders/UIPanel.h
  C:/Users/Administrator/Desktop/space_invaders/SelectUIPanel.h
  C:/Users/Administrator/Desktop/space_invaders/SelectInputHandler.h
@@ -7490,11 +7492,6 @@ CMakeFiles/space_invaders.dir/SpaceInvaders.cpp.obj
  C:/Users/Administrator/Desktop/space_invaders/Screen.h
  C:/Users/Administrator/Desktop/space_invaders/InputHandler.h
  C:/Users/Administrator/Desktop/space_invaders/Button.h
- C:/Users/Administrator/Desktop/space_invaders/ScreenManagerRemoteControl.h
- C:/Users/Administrator/Desktop/space_invaders/GameObject.h
- C:/Users/Administrator/Desktop/space_invaders/Component.h
- C:/Users/Administrator/Desktop/space_invaders/GameObjectSharer.h
- C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_raw_storage_iter.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/align.h
@@ -7508,16 +7505,20 @@ CMakeFiles/space_invaders.dir/SpaceInvaders.cpp.obj
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h
  C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h
- C:/Users/Administrator/Desktop/space_invaders/TransformComponent.h
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
- C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
- C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
  C:/Users/Administrator/Desktop/space_invaders/UIPanel.h
  C:/Users/Administrator/Desktop/space_invaders/GameInputHandler.h
  C:/Users/Administrator/Desktop/space_invaders/PlayerUpdateComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/UpdateComponent.h
+ C:/Users/Administrator/Desktop/space_invaders/Component.h
+ C:/Users/Administrator/Desktop/space_invaders/GameObjectSharer.h
+ C:/Users/Administrator/Desktop/space_invaders/TransformComponent.h
  C:/Users/Administrator/Desktop/space_invaders/RectColliderComponent.h
  C:/Users/Administrator/Desktop/space_invaders/ColliderComponent.h
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
+ C:/Program Files/JetBrains/CLion 2021.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
+ C:/Users/Administrator/Desktop/space_invaders/GameObject.h
+ C:/Users/Administrator/Desktop/space_invaders/GraphicsComponent.h
  C:/Users/Administrator/Desktop/space_invaders/GameOverInputHandler.h
  C:/Users/Administrator/Desktop/space_invaders/BulletSpawner.h
  C:/Users/Administrator/Desktop/space_invaders/PhysicsEnginePlayMode.h
