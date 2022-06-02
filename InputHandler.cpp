@@ -1,5 +1,5 @@
-#include <sstream>
 #include <iostream>
+#include <utility>
 #include "InputHandler.h"
 
 using namespace sf;
@@ -7,7 +7,7 @@ using namespace std;
 
 void InputHandler::initialiseInputHandler(ScreenManagerRemoteControl* sw, vector<shared_ptr<Button>> buttons, View* pointerToUIView, Screen* parentScreen) {
 	m_ScreenManagerRemoteControl = sw;
-	m_Buttons = buttons;
+	m_Buttons = std::move(buttons);
 	m_PointerToUIPanelView = pointerToUIView;
 	m_ParentScreen = parentScreen;
 }
@@ -28,8 +28,6 @@ void InputHandler::handleInput(RenderWindow& window, Event& event)
 	// Handle any left mouse click released
 	if (event.type == Event::MouseButtonReleased) {
         Vector2i mouse_pos {Mouse::getPosition().x - window.getPosition().x, Mouse::getPosition().y - window.getPosition().y};
-        std::cout << "x: " << window.mapPixelToCoords(mouse_pos,(*getPointerToUIView())).x
-                << ", y: " << window.mapPixelToCoords(mouse_pos,(*getPointerToUIView())).y << "\n";
         for (const auto& it : m_Buttons) {
 			if (it->m_Collider.contains(window.mapPixelToCoords(mouse_pos,(*getPointerToUIView())))) {
 				handleLeftClick(it->m_Text, window);

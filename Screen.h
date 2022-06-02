@@ -13,9 +13,7 @@ private:
 	vector<unique_ptr<UIPanel>> m_Panels;
 
 protected:
-	void addPanel(unique_ptr<UIPanel> p,
-		ScreenManagerRemoteControl* smrc,
-		shared_ptr<InputHandler> ih);
+	void addPanel(unique_ptr<UIPanel> p, ScreenManagerRemoteControl* smrc, shared_ptr<InputHandler> ih);
 
 public:
 	virtual void initialise();

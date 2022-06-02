@@ -36,9 +36,6 @@ GameScreen::GameScreen(ScreenManagerRemoteControl* smrc, Vector2i res)
 	m_View.setCenter(Vector2f(WorldState::WORLD_WIDTH /
 		2, WorldState::WORLD_HEIGHT / 2));
 
-	// This image is the workk of: https://opengameart.org/users/alekei
-	// Download: https://opengameart.org/content/background-night
-	// License: https://creativecommons.org/licenses/by/3.0/
 	m_BackgroundTexture.loadFromFile("graphics/background.png");
 
 	m_BackgroundSprite.setTexture(m_BackgroundTexture);
@@ -50,50 +47,27 @@ GameScreen::GameScreen(ScreenManagerRemoteControl* smrc, Vector2i res)
 void GameScreen::initialise()
 {
 	m_GIH->initialize();
-	m_PhysicsEnginePlayMode.initilize(
-		m_ScreenManagerRemoteControl->
-		shareGameObjectSharer());
-
+	m_PhysicsEnginePlayMode.initilize(m_ScreenManagerRemoteControl->shareGameObjectSharer());
 	WorldState::NUM_INVADERS = 0;
-
-	// Store all the bullet locations and
-	// Initialize all the BulletSpawners in the invaders
-	// Count the number of invaders
 	int i = 0;
-	auto it = m_ScreenManagerRemoteControl->
-		getGameObjects().begin();
-
-	auto end = m_ScreenManagerRemoteControl->
-		getGameObjects().end();
-
-	for (it;
-		it != end;
-		++it)
-	{
-		if ((*it).getTag() == "bullet")
-		{
+    for (auto& it : m_ScreenManagerRemoteControl->getGameObjects()) {
+		if (it.getTag() == "bullet") {
 			m_BulletObjectLocations.push_back(i);
 		}
-		if ((*it).getTag() == "invader")
-		{
+		if (it.getTag() == "invader") {
 			static_pointer_cast<InvaderUpdateComponent>(
-				(*it).getFirstUpdateComponent())->
+				it.getFirstUpdateComponent())->
 				initializeBulletSpawner(
 					getBulletSpawner(), i);
-
 			WorldState::NUM_INVADERS++;
 		}
-
 		++i;
 	}
 
 	m_GameOver = false;
 
-	if (WorldState::WAVE_NUMBER == 0)
-	{
-		WorldState::NUM_INVADERS_AT_START =
-			WorldState::NUM_INVADERS;
-
+	if (WorldState::WAVE_NUMBER == 0) {
+		WorldState::NUM_INVADERS_AT_START = WorldState::NUM_INVADERS;
 		WorldState::WAVE_NUMBER = 1;
 		WorldState::LIVES = 3;
 		WorldState::SCORE = 0;
