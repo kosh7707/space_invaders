@@ -11,8 +11,6 @@ private:
 	Time m_DT;
 	RenderWindow m_Window;
 
-	unique_ptr<ScreenManager> m_ScreenManager;
-
 	float m_FPS = 0;
 	Vector2i m_Resolution;
 
@@ -22,6 +20,7 @@ private:
 
 public:
 	SoundEngine m_SoundEngine;
+    unique_ptr<ScreenManager> m_ScreenManager;
 
 	GameEngine();
 	void run();
