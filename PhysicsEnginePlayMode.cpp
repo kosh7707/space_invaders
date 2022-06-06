@@ -6,167 +6,98 @@
 #include "InvaderUpdateComponent.h"
 #include "BulletUpdateComponent.h"
 
-void PhysicsEnginePlayMode::
-detectInvaderCollisions(
-	vector<GameObject>& objects, 
-	const vector<int>& bulletPositions)
-{
-	Vector2f offScreen(-1, -1);
+void PhysicsEnginePlayMode::detectInvaderCollisions(vector<GameObject>& objects, const vector<int>& bulletPositions) {
+	Vector2f offScreen(-10, -10);
 
-	auto invaderIt = objects.begin();
-	auto invaderEnd = objects.end();
-	for (invaderIt;
-		invaderIt != invaderEnd;
-		++invaderIt)
-	{
-		if ((*invaderIt).isActive()
-			&& (*invaderIt).getTag() == "invader")
-		{
-			auto bulletIt = objects.begin();
-			// Jump to the first bullet
-			advance(bulletIt, bulletPositions[0]);
-			auto bulletEnd = objects.end();
-			for (bulletIt;
-				bulletIt != bulletEnd;
-				++bulletIt)
-
-			{
-				if ((*invaderIt).getEncompassingRectCollider()
-					.intersects((*bulletIt)
-						.getEncompassingRectCollider())
-					&& (*bulletIt).getTag() == "bullet"
-					&& static_pointer_cast<BulletUpdateComponent>(
-					(*bulletIt).getFirstUpdateComponent())
-					->m_BelongsToPlayer)
-				{
+    for (auto& invaderIt : objects) {
+		if (invaderIt.isActive() && invaderIt.getTag() == "invader") {
+            for (auto& bulletIt : objects) {
+				if (invaderIt.getEncompassingRectCollider().intersects(bulletIt.getEncompassingRectCollider())
+                                            && bulletIt.getTag() == "bullet"
+                                            && static_pointer_cast<BulletUpdateComponent>(bulletIt.getFirstUpdateComponent())->m_BelongsToPlayer) {
 					SoundEngine::playInvaderExplode();
-					(*invaderIt).getTransformComponent()
-						->getLocation() = offScreen;
-
-					(*bulletIt).getTransformComponent()
-						->getLocation() = offScreen;
-
+                    invaderIt.getTransformComponent()->getLocation() = offScreen;
+					bulletIt.getTransformComponent()->getLocation() = offScreen;
 					WorldState::SCORE++;
 					WorldState::NUM_INVADERS--;
-					(*invaderIt).setInactive();
+                    invaderIt.setInactive();
 				}
 			}
 		}
 	}
 }
 
-void PhysicsEnginePlayMode::
-detectPlayerCollisionsAndInvaderDirection(
-	vector<GameObject>& objects, 
-	const vector<int>& bulletPositions)
-{
-	Vector2f offScreen(-1, -1);
-
-	FloatRect playerCollider = 
-		m_Player->getEncompassingRectCollider();
-
-	shared_ptr<TransformComponent> playerTransform = 
-		m_Player->getTransformComponent();
-
-	Vector2f playerLocation = 
-		playerTransform->getLocation();
-
-	auto it3 = objects.begin();
-	auto end3 = objects.end();
-	for (it3;
-		it3 != end3;
-		++it3)
-	{
-		if ((*it3).isActive() &&
-			(*it3).hasCollider() &&
-			(*it3).getTag() != "Player")
-		{
+void PhysicsEnginePlayMode::detectPlayerCollisionsAndInvaderDirection(vector<GameObject>& objects, const vector<int>& bulletPositions) {
+	Vector2f offScreen(-10, -10);
+	FloatRect playerCollider = m_Player->getEncompassingRectCollider();
+	shared_ptr<TransformComponent> playerTransform = m_Player->getTransformComponent();
+	for (auto& it : objects) {
+		if (it.isActive() && it.hasCollider() && it.getTag() != "Player") {
 			// Get a reference to all the parts of 
 			// the current game object we might need
-			FloatRect currentCollider = (*it3)
-				.getEncompassingRectCollider();
+			FloatRect currentCollider = it.getEncompassingRectCollider();
 
 			// Detect collisions between objects with the player
-			if (currentCollider.intersects(playerCollider))
-			{
-				if ((*it3).getTag() == "bullet")
-				{
+			if (currentCollider.intersects(playerCollider)) {
+				if (it.getTag() == "bullet") {
+                    std::cout << "hit by bullet, LIVES--\n";
 					SoundEngine::playPlayerExplode();
 					WorldState::LIVES--;
-					(*it3).getTransformComponent()->
-						getLocation() = offScreen;
+					it.getTransformComponent()->getLocation() = offScreen;
 				}
-
-				if ((*it3).getTag() == "invader")
-				{
+				if (it.getTag() == "invader") {
+                    std::cout << "hit by invader, LIVES--\n";
 					SoundEngine::playPlayerExplode();
 					SoundEngine::playInvaderExplode();
 					WorldState::LIVES--;
-					(*it3).getTransformComponent()->
-						getLocation() = offScreen;
-
+					it.getTransformComponent()->getLocation() = offScreen;
 					WorldState::SCORE++;
-					(*it3).setInactive();
+					it.setInactive();
 				}
+                if (it.getTag() == "randomobstacle") {
+                    std::cout << "hit by obstacle, LIVES--\n";
+                    SoundEngine::playPlayerExplode();
+                    WorldState::LIVES--;
+                    it.getTransformComponent()->getLocation() = offScreen;
+                }
 			}
 
-			shared_ptr<TransformComponent> 
-				currentTransform =
-				(*it3).getTransformComponent();
+			shared_ptr<TransformComponent>currentTransform = it.getTransformComponent();
 
-			Vector2f currentLocation = 
-				currentTransform->getLocation();
+			Vector2f currentLocation = currentTransform->getLocation();
 
-			string currentTag = (*it3).getTag();
-			Vector2f currentSize = 
-				currentTransform->getSize();
+			string currentTag = it.getTag();
+			Vector2f currentSize = currentTransform->getSize();
 
 			// Handle the direction and descent of the invaders
-			if (currentTag == "invader")
-			{
+			if (currentTag == "invader") {
 				// This is an invader
-				if (!m_NeedToDropDownAndReverse && 
-					!m_InvaderHitWallThisFrame)
-				{
+				if (!m_NeedToDropDownAndReverse && !m_InvaderHitWallThisFrame) {
 					// Currently no need to dropdown 
 					// and reverse from previous frame 
 					// or any hits this frame
-					if (currentLocation.x >= 
-						WorldState::WORLD_WIDTH - currentSize.x)
-					{
+					if (currentLocation.x >= WorldState::WORLD_WIDTH - currentSize.x) {
 						// The invader is passed its furthest right position
-						if (static_pointer_cast
-							<InvaderUpdateComponent>((*it3)
-							.getFirstUpdateComponent())->
-							isMovingRight())
-						{
+						if (static_pointer_cast<InvaderUpdateComponent>(it.getFirstUpdateComponent())->isMovingRight()) {
 							// The invader is travelling right so set 
 							// a flag that an invader has collided 
 							m_InvaderHitWallThisFrame = true;
 						}
 					}
-					else if (currentLocation.x < 0)
-					{
+					else if (currentLocation.x < 0) {
 						// The invader is past its furthest left position
-						if (!static_pointer_cast<InvaderUpdateComponent>(
-							(*it3).getFirstUpdateComponent())->isMovingRight())
-						{
+						if (!static_pointer_cast<InvaderUpdateComponent>(it.getFirstUpdateComponent())->isMovingRight()) {
 							// The invader is travelling left so 
 							// set a flag that an invader has collided 
 							m_InvaderHitWallThisFrame = true;
 						}
 					}
 				}
-				else if (m_NeedToDropDownAndReverse 
-					&& !m_InvaderHitWallPreviousFrame)
-				{
+				else if (m_NeedToDropDownAndReverse && !m_InvaderHitWallPreviousFrame) {
 					// Drop down and reverse has been set
-					if ((*it3).hasUpdateComponent())
-					{
+					if (it.hasUpdateComponent()) {
 						// Drop down and reverse
-						static_pointer_cast<InvaderUpdateComponent>(
-							(*it3).getFirstUpdateComponent())
-							->dropDownAndReverse();
+						static_pointer_cast<InvaderUpdateComponent>(it.getFirstUpdateComponent())->dropDownAndReverse();
 					}
 				}
 			}
@@ -194,13 +125,9 @@ void PhysicsEnginePlayMode::initilize(GameObjectSharer& gos) {
 	m_Player = &gos.findFirstObjectWithTag("Player");
 }
 
-void PhysicsEnginePlayMode::detectCollisions(
-	vector<GameObject>& objects,
-	const vector<int>& bulletPositions)
-{
+void PhysicsEnginePlayMode::detectCollisions(vector<GameObject>& objects, const vector<int>& bulletPositions) {
 	detectInvaderCollisions(objects, bulletPositions);
-	detectPlayerCollisionsAndInvaderDirection(
-		objects, bulletPositions);
+	detectPlayerCollisionsAndInvaderDirection(objects, bulletPositions);
 
 	handleInvaderDirection();	
 }

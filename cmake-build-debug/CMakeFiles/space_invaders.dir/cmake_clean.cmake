@@ -47,6 +47,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/space_invaders.dir/PlayModeObjectLoader.cpp.obj.d"
   "CMakeFiles/space_invaders.dir/PlayerUpdateComponent.cpp.obj"
   "CMakeFiles/space_invaders.dir/PlayerUpdateComponent.cpp.obj.d"
+  "CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.obj"
+  "CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.obj.d"
   "CMakeFiles/space_invaders.dir/RectColliderComponent.cpp.obj"
   "CMakeFiles/space_invaders.dir/RectColliderComponent.cpp.obj.d"
   "CMakeFiles/space_invaders.dir/Screen.cpp.obj"

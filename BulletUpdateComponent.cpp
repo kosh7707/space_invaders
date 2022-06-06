@@ -22,7 +22,7 @@ void BulletUpdateComponent::spawnForInvader(Vector2f spawnPosition)
     std::random_device rd;
     std::mt19937 mt(rd());
     std::uniform_int_distribution<int> dist(0, 32767);
-	m_AlienBulletSpeedModifier = (((dist(mt) % m_ModifierRandomComponent))) + m_MinimumAdditionalModifier;
+	m_AlienBulletSpeedModifier = (((dist(mt) % m_ModifierRandomComponent))) + m_MinimumAdditionalModifier - 3;
 
 	m_TC->getLocation().x = spawnPosition.x;
 	m_TC->getLocation().y = spawnPosition.y;

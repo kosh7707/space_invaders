@@ -6,6 +6,8 @@
 #include "GameObject.h"
 #include "BulletUpdateComponent.h"
 #include "InvaderUpdateComponent.h"
+#include "RandomObstacleUpdateComponent.h"
+#include <random>
 
 class BulletSpawner;
 
@@ -43,16 +45,16 @@ GameScreen::GameScreen(Vector2i res)
 		float(m_View.getSize().y) / textureSize.y);
 }
 
-void GameScreen::initialise()
-{
+void GameScreen::initialise() {
 	m_GIH->initialize();
 	m_PhysicsEnginePlayMode.initilize(ScreenManager::shareGameObjectSharer());
 	WorldState::NUM_INVADERS = 0;
 	int i = 0;
     for (auto& it : ScreenManager::getGameObjects()) {
-		if (it.getTag() == "bullet") {
+		if (it.getTag() == "bullet")
 			m_BulletObjectLocations.push_back(i);
-		}
+        if (it.getTag() == "randomobstacle")
+            m_ObstacleObjectLocations.push_back(i);
 		if (it.getTag() == "invader") {
 			static_pointer_cast<InvaderUpdateComponent>(
 				it.getFirstUpdateComponent())->
@@ -73,32 +75,37 @@ void GameScreen::initialise()
 	}
 }
 
-void GameScreen::update(float fps)
-{
+void GameScreen::update(float fps) {
 	Screen::update(fps);
 
-	if (!m_GameOver)
-	{
-		if (m_WaitingToSpawnBulletForPlayer)
-		{
-			static_pointer_cast<BulletUpdateComponent>(
-                    ScreenManager::getGameObjects()
-				    [m_BulletObjectLocations[m_NextBullet]].
-				    getFirstUpdateComponent())->
-				    spawnForPlayer(m_PlayerBulletSpawnLocation);
+	if (!m_GameOver) {
+        Time RandomObstacleClockCounter = m_RandomObstacleClock.getElapsedTime();
+        if (RandomObstacleClockCounter.asMilliseconds() > 5000) {
+            m_WaitingToSpawnRandomObstacle = true;
+            m_RandomObstacleClock.restart();
+        }
+
+        if (m_WaitingToSpawnRandomObstacle) {
+            std::cout << "m_WaitingToSpawnRandomObstacle is true!\n";
+            for (auto& it : ScreenManager::getGameObjects()) {
+                if (it.getTag() == "randomobstacle") {
+                    std::cout << "Obstacle Spawned!!\n";
+                    static_pointer_cast<RandomObstacleUpdateComponent>(it.getFirstUpdateComponent())->spawnForRandom();
+                    m_WaitingToSpawnRandomObstacle = false;
+                }
+            }
+        }
+
+		if (m_WaitingToSpawnBulletForPlayer) {
+			static_pointer_cast<BulletUpdateComponent>(ScreenManager::getGameObjects()[m_BulletObjectLocations[m_NextBullet]].getFirstUpdateComponent())
+			        ->spawnForPlayer(m_PlayerBulletSpawnLocation);
 			m_WaitingToSpawnBulletForPlayer = false;
 			m_NextBullet++;
-
 			if (m_NextBullet == m_BulletObjectLocations.size())
-			{
 				m_NextBullet = 0;
-			}
 		}
-
-		if (m_WaitingToSpawnBulletForInvader)
-		{
-			static_pointer_cast<BulletUpdateComponent>(
-                    ScreenManager::getGameObjects()
+		if (m_WaitingToSpawnBulletForInvader) {
+			static_pointer_cast<BulletUpdateComponent>(ScreenManager::getGameObjects()
 				    [m_BulletObjectLocations[m_NextBullet]].
 				    getFirstUpdateComponent())->
 				    spawnForInvader(m_InvaderBulletSpawnLocation);
@@ -107,14 +114,13 @@ void GameScreen::update(float fps)
 			m_NextBullet++;
 
 			if (m_NextBullet == m_BulletObjectLocations.size())
-			{
 				m_NextBullet = 0;
-			}
 		}
 
 		for (auto& it : ScreenManager::getGameObjects())
 			it.update(fps);
 
+        // 충돌 처리 부분
 		m_PhysicsEnginePlayMode.detectCollisions(ScreenManager::getGameObjects(), m_BulletObjectLocations);
 
 		if (WorldState::NUM_INVADERS <= 0) {
@@ -122,9 +128,8 @@ void GameScreen::update(float fps)
             ScreenManager::loadLevelInPlayMode("level1");
 		}
 
-		if (WorldState::LIVES <= 0) {
+		if (WorldState::LIVES <= 0)
 			m_GameOver = true;
-		}
 	}
 }
 

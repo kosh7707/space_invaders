@@ -3,8 +3,7 @@
 #include <iostream>
 #include <fstream>
 
-void BlueprintObjectParser::parseNextObjectForBlueprint(ifstream& reader, GameObjectBlueprint& bp)
-{
+void BlueprintObjectParser::parseNextObjectForBlueprint(ifstream& reader, GameObjectBlueprint& bp) {
 	string lineFromFile;
 	string value;
 

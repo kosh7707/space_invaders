@@ -428,11 +428,26 @@ CMakeFiles/space_invaders.dir/PlayerUpdateComponent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/space_invaders.dir/PlayerUpdateComponent.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\space_invaders\PlayerUpdateComponent.cpp -o CMakeFiles\space_invaders.dir\PlayerUpdateComponent.cpp.s
 
+CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.obj: CMakeFiles/space_invaders.dir/flags.make
+CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.obj: CMakeFiles/space_invaders.dir/includes_CXX.rsp
+CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.obj: ../RandomObstacleUpdateComponent.cpp
+CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.obj: CMakeFiles/space_invaders.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.obj -MF CMakeFiles\space_invaders.dir\RandomObstacleUpdateComponent.cpp.obj.d -o CMakeFiles\space_invaders.dir\RandomObstacleUpdateComponent.cpp.obj -c C:\Users\Administrator\Desktop\space_invaders\RandomObstacleUpdateComponent.cpp
+
+CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Administrator\Desktop\space_invaders\RandomObstacleUpdateComponent.cpp > CMakeFiles\space_invaders.dir\RandomObstacleUpdateComponent.cpp.i
+
+CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\space_invaders\RandomObstacleUpdateComponent.cpp -o CMakeFiles\space_invaders.dir\RandomObstacleUpdateComponent.cpp.s
+
 CMakeFiles/space_invaders.dir/RectColliderComponent.cpp.obj: CMakeFiles/space_invaders.dir/flags.make
 CMakeFiles/space_invaders.dir/RectColliderComponent.cpp.obj: CMakeFiles/space_invaders.dir/includes_CXX.rsp
 CMakeFiles/space_invaders.dir/RectColliderComponent.cpp.obj: ../RectColliderComponent.cpp
 CMakeFiles/space_invaders.dir/RectColliderComponent.cpp.obj: CMakeFiles/space_invaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/space_invaders.dir/RectColliderComponent.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/space_invaders.dir/RectColliderComponent.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_invaders.dir/RectColliderComponent.cpp.obj -MF CMakeFiles\space_invaders.dir\RectColliderComponent.cpp.obj.d -o CMakeFiles\space_invaders.dir\RectColliderComponent.cpp.obj -c C:\Users\Administrator\Desktop\space_invaders\RectColliderComponent.cpp
 
 CMakeFiles/space_invaders.dir/RectColliderComponent.cpp.i: cmake_force
@@ -447,7 +462,7 @@ CMakeFiles/space_invaders.dir/Screen.cpp.obj: CMakeFiles/space_invaders.dir/flag
 CMakeFiles/space_invaders.dir/Screen.cpp.obj: CMakeFiles/space_invaders.dir/includes_CXX.rsp
 CMakeFiles/space_invaders.dir/Screen.cpp.obj: ../Screen.cpp
 CMakeFiles/space_invaders.dir/Screen.cpp.obj: CMakeFiles/space_invaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/space_invaders.dir/Screen.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/space_invaders.dir/Screen.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_invaders.dir/Screen.cpp.obj -MF CMakeFiles\space_invaders.dir\Screen.cpp.obj.d -o CMakeFiles\space_invaders.dir\Screen.cpp.obj -c C:\Users\Administrator\Desktop\space_invaders\Screen.cpp
 
 CMakeFiles/space_invaders.dir/Screen.cpp.i: cmake_force
@@ -462,7 +477,7 @@ CMakeFiles/space_invaders.dir/ScreenManager.cpp.obj: CMakeFiles/space_invaders.d
 CMakeFiles/space_invaders.dir/ScreenManager.cpp.obj: CMakeFiles/space_invaders.dir/includes_CXX.rsp
 CMakeFiles/space_invaders.dir/ScreenManager.cpp.obj: ../ScreenManager.cpp
 CMakeFiles/space_invaders.dir/ScreenManager.cpp.obj: CMakeFiles/space_invaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/space_invaders.dir/ScreenManager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/space_invaders.dir/ScreenManager.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_invaders.dir/ScreenManager.cpp.obj -MF CMakeFiles\space_invaders.dir\ScreenManager.cpp.obj.d -o CMakeFiles\space_invaders.dir\ScreenManager.cpp.obj -c C:\Users\Administrator\Desktop\space_invaders\ScreenManager.cpp
 
 CMakeFiles/space_invaders.dir/ScreenManager.cpp.i: cmake_force
@@ -477,7 +492,7 @@ CMakeFiles/space_invaders.dir/ScreenManagerRemoteControl.cpp.obj: CMakeFiles/spa
 CMakeFiles/space_invaders.dir/ScreenManagerRemoteControl.cpp.obj: CMakeFiles/space_invaders.dir/includes_CXX.rsp
 CMakeFiles/space_invaders.dir/ScreenManagerRemoteControl.cpp.obj: ../ScreenManagerRemoteControl.cpp
 CMakeFiles/space_invaders.dir/ScreenManagerRemoteControl.cpp.obj: CMakeFiles/space_invaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/space_invaders.dir/ScreenManagerRemoteControl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/space_invaders.dir/ScreenManagerRemoteControl.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_invaders.dir/ScreenManagerRemoteControl.cpp.obj -MF CMakeFiles\space_invaders.dir\ScreenManagerRemoteControl.cpp.obj.d -o CMakeFiles\space_invaders.dir\ScreenManagerRemoteControl.cpp.obj -c C:\Users\Administrator\Desktop\space_invaders\ScreenManagerRemoteControl.cpp
 
 CMakeFiles/space_invaders.dir/ScreenManagerRemoteControl.cpp.i: cmake_force
@@ -492,7 +507,7 @@ CMakeFiles/space_invaders.dir/SelectInputHandler.cpp.obj: CMakeFiles/space_invad
 CMakeFiles/space_invaders.dir/SelectInputHandler.cpp.obj: CMakeFiles/space_invaders.dir/includes_CXX.rsp
 CMakeFiles/space_invaders.dir/SelectInputHandler.cpp.obj: ../SelectInputHandler.cpp
 CMakeFiles/space_invaders.dir/SelectInputHandler.cpp.obj: CMakeFiles/space_invaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/space_invaders.dir/SelectInputHandler.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/space_invaders.dir/SelectInputHandler.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_invaders.dir/SelectInputHandler.cpp.obj -MF CMakeFiles\space_invaders.dir\SelectInputHandler.cpp.obj.d -o CMakeFiles\space_invaders.dir\SelectInputHandler.cpp.obj -c C:\Users\Administrator\Desktop\space_invaders\SelectInputHandler.cpp
 
 CMakeFiles/space_invaders.dir/SelectInputHandler.cpp.i: cmake_force
@@ -507,7 +522,7 @@ CMakeFiles/space_invaders.dir/SelectScreen.cpp.obj: CMakeFiles/space_invaders.di
 CMakeFiles/space_invaders.dir/SelectScreen.cpp.obj: CMakeFiles/space_invaders.dir/includes_CXX.rsp
 CMakeFiles/space_invaders.dir/SelectScreen.cpp.obj: ../SelectScreen.cpp
 CMakeFiles/space_invaders.dir/SelectScreen.cpp.obj: CMakeFiles/space_invaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/space_invaders.dir/SelectScreen.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/space_invaders.dir/SelectScreen.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_invaders.dir/SelectScreen.cpp.obj -MF CMakeFiles\space_invaders.dir\SelectScreen.cpp.obj.d -o CMakeFiles\space_invaders.dir\SelectScreen.cpp.obj -c C:\Users\Administrator\Desktop\space_invaders\SelectScreen.cpp
 
 CMakeFiles/space_invaders.dir/SelectScreen.cpp.i: cmake_force
@@ -522,7 +537,7 @@ CMakeFiles/space_invaders.dir/SelectUIPanel.cpp.obj: CMakeFiles/space_invaders.d
 CMakeFiles/space_invaders.dir/SelectUIPanel.cpp.obj: CMakeFiles/space_invaders.dir/includes_CXX.rsp
 CMakeFiles/space_invaders.dir/SelectUIPanel.cpp.obj: ../SelectUIPanel.cpp
 CMakeFiles/space_invaders.dir/SelectUIPanel.cpp.obj: CMakeFiles/space_invaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/space_invaders.dir/SelectUIPanel.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/space_invaders.dir/SelectUIPanel.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_invaders.dir/SelectUIPanel.cpp.obj -MF CMakeFiles\space_invaders.dir\SelectUIPanel.cpp.obj.d -o CMakeFiles\space_invaders.dir\SelectUIPanel.cpp.obj -c C:\Users\Administrator\Desktop\space_invaders\SelectUIPanel.cpp
 
 CMakeFiles/space_invaders.dir/SelectUIPanel.cpp.i: cmake_force
@@ -537,7 +552,7 @@ CMakeFiles/space_invaders.dir/SoundEngine.cpp.obj: CMakeFiles/space_invaders.dir
 CMakeFiles/space_invaders.dir/SoundEngine.cpp.obj: CMakeFiles/space_invaders.dir/includes_CXX.rsp
 CMakeFiles/space_invaders.dir/SoundEngine.cpp.obj: ../SoundEngine.cpp
 CMakeFiles/space_invaders.dir/SoundEngine.cpp.obj: CMakeFiles/space_invaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/space_invaders.dir/SoundEngine.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/space_invaders.dir/SoundEngine.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_invaders.dir/SoundEngine.cpp.obj -MF CMakeFiles\space_invaders.dir\SoundEngine.cpp.obj.d -o CMakeFiles\space_invaders.dir\SoundEngine.cpp.obj -c C:\Users\Administrator\Desktop\space_invaders\SoundEngine.cpp
 
 CMakeFiles/space_invaders.dir/SoundEngine.cpp.i: cmake_force
@@ -552,7 +567,7 @@ CMakeFiles/space_invaders.dir/SpaceInvaders.cpp.obj: CMakeFiles/space_invaders.d
 CMakeFiles/space_invaders.dir/SpaceInvaders.cpp.obj: CMakeFiles/space_invaders.dir/includes_CXX.rsp
 CMakeFiles/space_invaders.dir/SpaceInvaders.cpp.obj: ../SpaceInvaders.cpp
 CMakeFiles/space_invaders.dir/SpaceInvaders.cpp.obj: CMakeFiles/space_invaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/space_invaders.dir/SpaceInvaders.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/space_invaders.dir/SpaceInvaders.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_invaders.dir/SpaceInvaders.cpp.obj -MF CMakeFiles\space_invaders.dir\SpaceInvaders.cpp.obj.d -o CMakeFiles\space_invaders.dir\SpaceInvaders.cpp.obj -c C:\Users\Administrator\Desktop\space_invaders\SpaceInvaders.cpp
 
 CMakeFiles/space_invaders.dir/SpaceInvaders.cpp.i: cmake_force
@@ -567,7 +582,7 @@ CMakeFiles/space_invaders.dir/StandardGraphicsComponent.cpp.obj: CMakeFiles/spac
 CMakeFiles/space_invaders.dir/StandardGraphicsComponent.cpp.obj: CMakeFiles/space_invaders.dir/includes_CXX.rsp
 CMakeFiles/space_invaders.dir/StandardGraphicsComponent.cpp.obj: ../StandardGraphicsComponent.cpp
 CMakeFiles/space_invaders.dir/StandardGraphicsComponent.cpp.obj: CMakeFiles/space_invaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/space_invaders.dir/StandardGraphicsComponent.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/space_invaders.dir/StandardGraphicsComponent.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_invaders.dir/StandardGraphicsComponent.cpp.obj -MF CMakeFiles\space_invaders.dir\StandardGraphicsComponent.cpp.obj.d -o CMakeFiles\space_invaders.dir\StandardGraphicsComponent.cpp.obj -c C:\Users\Administrator\Desktop\space_invaders\StandardGraphicsComponent.cpp
 
 CMakeFiles/space_invaders.dir/StandardGraphicsComponent.cpp.i: cmake_force
@@ -582,7 +597,7 @@ CMakeFiles/space_invaders.dir/TransformComponent.cpp.obj: CMakeFiles/space_invad
 CMakeFiles/space_invaders.dir/TransformComponent.cpp.obj: CMakeFiles/space_invaders.dir/includes_CXX.rsp
 CMakeFiles/space_invaders.dir/TransformComponent.cpp.obj: ../TransformComponent.cpp
 CMakeFiles/space_invaders.dir/TransformComponent.cpp.obj: CMakeFiles/space_invaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/space_invaders.dir/TransformComponent.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/space_invaders.dir/TransformComponent.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_invaders.dir/TransformComponent.cpp.obj -MF CMakeFiles\space_invaders.dir\TransformComponent.cpp.obj.d -o CMakeFiles\space_invaders.dir\TransformComponent.cpp.obj -c C:\Users\Administrator\Desktop\space_invaders\TransformComponent.cpp
 
 CMakeFiles/space_invaders.dir/TransformComponent.cpp.i: cmake_force
@@ -597,7 +612,7 @@ CMakeFiles/space_invaders.dir/UIPanel.cpp.obj: CMakeFiles/space_invaders.dir/fla
 CMakeFiles/space_invaders.dir/UIPanel.cpp.obj: CMakeFiles/space_invaders.dir/includes_CXX.rsp
 CMakeFiles/space_invaders.dir/UIPanel.cpp.obj: ../UIPanel.cpp
 CMakeFiles/space_invaders.dir/UIPanel.cpp.obj: CMakeFiles/space_invaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/space_invaders.dir/UIPanel.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/space_invaders.dir/UIPanel.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_invaders.dir/UIPanel.cpp.obj -MF CMakeFiles\space_invaders.dir\UIPanel.cpp.obj.d -o CMakeFiles\space_invaders.dir\UIPanel.cpp.obj -c C:\Users\Administrator\Desktop\space_invaders\UIPanel.cpp
 
 CMakeFiles/space_invaders.dir/UIPanel.cpp.i: cmake_force
@@ -612,7 +627,7 @@ CMakeFiles/space_invaders.dir/UpdateComponent.cpp.obj: CMakeFiles/space_invaders
 CMakeFiles/space_invaders.dir/UpdateComponent.cpp.obj: CMakeFiles/space_invaders.dir/includes_CXX.rsp
 CMakeFiles/space_invaders.dir/UpdateComponent.cpp.obj: ../UpdateComponent.cpp
 CMakeFiles/space_invaders.dir/UpdateComponent.cpp.obj: CMakeFiles/space_invaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/space_invaders.dir/UpdateComponent.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/space_invaders.dir/UpdateComponent.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/space_invaders.dir/UpdateComponent.cpp.obj -MF CMakeFiles\space_invaders.dir\UpdateComponent.cpp.obj.d -o CMakeFiles\space_invaders.dir\UpdateComponent.cpp.obj -c C:\Users\Administrator\Desktop\space_invaders\UpdateComponent.cpp
 
 CMakeFiles/space_invaders.dir/UpdateComponent.cpp.i: cmake_force
@@ -649,6 +664,7 @@ space_invaders_OBJECTS = \
 "CMakeFiles/space_invaders.dir/PhysicsEnginePlayMode.cpp.obj" \
 "CMakeFiles/space_invaders.dir/PlayModeObjectLoader.cpp.obj" \
 "CMakeFiles/space_invaders.dir/PlayerUpdateComponent.cpp.obj" \
+"CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.obj" \
 "CMakeFiles/space_invaders.dir/RectColliderComponent.cpp.obj" \
 "CMakeFiles/space_invaders.dir/Screen.cpp.obj" \
 "CMakeFiles/space_invaders.dir/ScreenManager.cpp.obj" \
@@ -690,6 +706,7 @@ space_invaders.exe: CMakeFiles/space_invaders.dir/ObjectTags.cpp.obj
 space_invaders.exe: CMakeFiles/space_invaders.dir/PhysicsEnginePlayMode.cpp.obj
 space_invaders.exe: CMakeFiles/space_invaders.dir/PlayModeObjectLoader.cpp.obj
 space_invaders.exe: CMakeFiles/space_invaders.dir/PlayerUpdateComponent.cpp.obj
+space_invaders.exe: CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.obj
 space_invaders.exe: CMakeFiles/space_invaders.dir/RectColliderComponent.cpp.obj
 space_invaders.exe: CMakeFiles/space_invaders.dir/Screen.cpp.obj
 space_invaders.exe: CMakeFiles/space_invaders.dir/ScreenManager.cpp.obj
@@ -718,7 +735,7 @@ space_invaders.exe: C:/SFML/lib/libFLAC.a
 space_invaders.exe: CMakeFiles/space_invaders.dir/linklibs.rsp
 space_invaders.exe: CMakeFiles/space_invaders.dir/objects1.rsp
 space_invaders.exe: CMakeFiles/space_invaders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Linking CXX executable space_invaders.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Administrator\Desktop\space_invaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Linking CXX executable space_invaders.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\space_invaders.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

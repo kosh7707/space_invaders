@@ -2,16 +2,13 @@
 #include "PlayModeObjectLoader.h"
 #include <iostream>
 
-void LevelManager::
-loadGameObjectsForPlayMode(string screenToLoad)
+void LevelManager::loadGameObjectsForPlayMode(string screenToLoad)
 {
 	m_GameObjects.clear();
-	string levelToLoad = ""
-		+ WORLD_FOLDER + SLASH + screenToLoad;
+	string levelToLoad = WORLD_FOLDER + SLASH + screenToLoad;
 
 	PlayModeObjectLoader pmol;
-	pmol.loadGameObjectsForPlayMode(
-		levelToLoad, m_GameObjects);
+	pmol.loadGameObjectsForPlayMode(levelToLoad, m_GameObjects);
 
 	runStartPhase();
 }

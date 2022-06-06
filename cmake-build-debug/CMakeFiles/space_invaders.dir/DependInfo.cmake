@@ -32,6 +32,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Administrator/Desktop/space_invaders/PhysicsEnginePlayMode.cpp" "CMakeFiles/space_invaders.dir/PhysicsEnginePlayMode.cpp.obj" "gcc" "CMakeFiles/space_invaders.dir/PhysicsEnginePlayMode.cpp.obj.d"
   "C:/Users/Administrator/Desktop/space_invaders/PlayModeObjectLoader.cpp" "CMakeFiles/space_invaders.dir/PlayModeObjectLoader.cpp.obj" "gcc" "CMakeFiles/space_invaders.dir/PlayModeObjectLoader.cpp.obj.d"
   "C:/Users/Administrator/Desktop/space_invaders/PlayerUpdateComponent.cpp" "CMakeFiles/space_invaders.dir/PlayerUpdateComponent.cpp.obj" "gcc" "CMakeFiles/space_invaders.dir/PlayerUpdateComponent.cpp.obj.d"
+  "C:/Users/Administrator/Desktop/space_invaders/RandomObstacleUpdateComponent.cpp" "CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.obj" "gcc" "CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.obj.d"
   "C:/Users/Administrator/Desktop/space_invaders/RectColliderComponent.cpp" "CMakeFiles/space_invaders.dir/RectColliderComponent.cpp.obj" "gcc" "CMakeFiles/space_invaders.dir/RectColliderComponent.cpp.obj.d"
   "C:/Users/Administrator/Desktop/space_invaders/Screen.cpp" "CMakeFiles/space_invaders.dir/Screen.cpp.obj" "gcc" "CMakeFiles/space_invaders.dir/Screen.cpp.obj.d"
   "C:/Users/Administrator/Desktop/space_invaders/ScreenManager.cpp" "CMakeFiles/space_invaders.dir/ScreenManager.cpp.obj" "gcc" "CMakeFiles/space_invaders.dir/ScreenManager.cpp.obj.d"

@@ -704,6 +704,30 @@ PlayerUpdateComponent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\space_invaders.dir\build.make CMakeFiles/space_invaders.dir/PlayerUpdateComponent.cpp.s
 .PHONY : PlayerUpdateComponent.cpp.s
 
+RandomObstacleUpdateComponent.obj: RandomObstacleUpdateComponent.cpp.obj
+.PHONY : RandomObstacleUpdateComponent.obj
+
+# target to build an object file
+RandomObstacleUpdateComponent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space_invaders.dir\build.make CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.obj
+.PHONY : RandomObstacleUpdateComponent.cpp.obj
+
+RandomObstacleUpdateComponent.i: RandomObstacleUpdateComponent.cpp.i
+.PHONY : RandomObstacleUpdateComponent.i
+
+# target to preprocess a source file
+RandomObstacleUpdateComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space_invaders.dir\build.make CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.i
+.PHONY : RandomObstacleUpdateComponent.cpp.i
+
+RandomObstacleUpdateComponent.s: RandomObstacleUpdateComponent.cpp.s
+.PHONY : RandomObstacleUpdateComponent.s
+
+# target to generate assembly for a file
+RandomObstacleUpdateComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space_invaders.dir\build.make CMakeFiles/space_invaders.dir/RandomObstacleUpdateComponent.cpp.s
+.PHONY : RandomObstacleUpdateComponent.cpp.s
+
 RectColliderComponent.obj: RectColliderComponent.cpp.obj
 .PHONY : RectColliderComponent.obj
 
@@ -1097,6 +1121,9 @@ help:
 	@echo ... PlayerUpdateComponent.obj
 	@echo ... PlayerUpdateComponent.i
 	@echo ... PlayerUpdateComponent.s
+	@echo ... RandomObstacleUpdateComponent.obj
+	@echo ... RandomObstacleUpdateComponent.i
+	@echo ... RandomObstacleUpdateComponent.s
 	@echo ... RectColliderComponent.obj
 	@echo ... RectColliderComponent.i
 	@echo ... RectColliderComponent.s

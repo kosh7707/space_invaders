@@ -276,4 +276,5 @@ CMakeFiles/space_invaders.dir/GameObjectFactoryPlayMode.cpp.obj: \
  C:\Users\Administrator\Desktop\space_invaders\RectColliderComponent.h \
  C:\Users\Administrator\Desktop\space_invaders\ColliderComponent.h \
  C:\Users\Administrator\Desktop\space_invaders\InvaderUpdateComponent.h \
- C:\Users\Administrator\Desktop\space_invaders\BulletUpdateComponent.h
+ C:\Users\Administrator\Desktop\space_invaders\BulletUpdateComponent.h \
+ C:\Users\Administrator\Desktop\space_invaders\RandomObstacleUpdateComponent.h

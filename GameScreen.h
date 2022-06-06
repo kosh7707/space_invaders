@@ -15,12 +15,15 @@ private:
 	int m_NumberInvadersInWorldFile = 0;
 
 	vector<int> m_BulletObjectLocations;
+    vector<int> m_ObstacleObjectLocations;
 	int m_NextBullet = 0;
 	bool m_WaitingToSpawnBulletForPlayer = false;
 	bool m_WaitingToSpawnBulletForInvader = false;
+    bool m_WaitingToSpawnRandomObstacle = false;
 	Vector2f m_PlayerBulletSpawnLocation;
 	Vector2f m_InvaderBulletSpawnLocation;
 	Clock m_BulletClock;
+    Clock m_RandomObstacleClock;
 
 	Texture m_BackgroundTexture;
 	Sprite m_BackgroundSprite;
@@ -40,20 +43,17 @@ public:
 	*****************************************************
 	*****************************************************/
 
-	void spawnBullet(Vector2f spawnLocation, bool forPlayer) override
-	{
-		if (forPlayer)
-		{
+	void spawnBullet(Vector2f spawnLocation, bool forPlayer) override {
+		if (forPlayer) {
 			Time elapsedTime = m_BulletClock.getElapsedTime();
-			if (elapsedTime.asMilliseconds() > 500) {
+			if (elapsedTime.asMilliseconds() > 300) {
 				m_PlayerBulletSpawnLocation.x = spawnLocation.x;
 				m_PlayerBulletSpawnLocation.y = spawnLocation.y;
 				m_WaitingToSpawnBulletForPlayer = true;
 				m_BulletClock.restart();
 			}
 		}
-		else
-		{
+		else {
 			m_InvaderBulletSpawnLocation.x = spawnLocation.x;
 			m_InvaderBulletSpawnLocation.y = spawnLocation.y;
 			m_WaitingToSpawnBulletForInvader = true;

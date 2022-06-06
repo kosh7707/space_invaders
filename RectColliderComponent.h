@@ -9,9 +9,9 @@ class RectColliderComponent : public ColliderComponent
 private:
 	string m_SpecificType = "rect";
 	FloatRect m_Collider;
-	string m_Tag = "";
+	string m_Tag;
 public:
-	RectColliderComponent(string name);
+	RectColliderComponent(const string& name);
 	string getColliderTag();
 	void setOrMoveCollider(
 		float x, float y, float width, float height);
@@ -24,7 +24,7 @@ public:
 	*****************************************************
 	*****************************************************/
 
-	string getSpecificType() {
+	string getSpecificType() override {
 		return m_SpecificType;
 	}
 

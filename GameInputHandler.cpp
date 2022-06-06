@@ -112,12 +112,10 @@ void GameInputHandler::handleKeyReleased(Event& event, RenderWindow& window)
 	{
 		SoundEngine::playShoot();
 		Vector2f spawnLocation;
-		spawnLocation.x = m_PTC->getLocation().x + 
-			m_PTC->getSize().x / 2;
-
+		spawnLocation.x = m_PTC->getLocation().x + m_PTC->getSize().x / 2;
 		spawnLocation.y = m_PTC->getLocation().y;
-
-		static_cast<GameScreen*>(getmParentScreen())->
-			spawnBullet(spawnLocation, true);
+        // getmParentScreen() --> GameScreen
+        // GameScreen.spawnBulltet --> BulletSpawner로부터 상속받음
+		static_cast<GameScreen*>(getmParentScreen())->spawnBullet(spawnLocation, true);
 	}
 }

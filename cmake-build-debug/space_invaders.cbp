@@ -240,6 +240,12 @@
 		<Unit filename="C:/Users/Administrator/Desktop/space_invaders/PlayerUpdateComponent.h">
 			<Option target="space_invaders"/>
 		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/space_invaders/RandomObstacleUpdateComponent.cpp">
+			<Option target="space_invaders"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/space_invaders/RandomObstacleUpdateComponent.h">
+			<Option target="space_invaders"/>
+		</Unit>
 		<Unit filename="C:/Users/Administrator/Desktop/space_invaders/RectColliderComponent.cpp">
 			<Option target="space_invaders"/>
 		</Unit>
